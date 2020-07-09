@@ -1,0 +1,13 @@
+C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Tracking.Data\bin\Debug\netcoreapp3.1\Tracking.Data.deps.json
+C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Tracking.Data\bin\Debug\netcoreapp3.1\Tracking.Data.dll
+C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Tracking.Data\obj\Debug\netcoreapp3.1\Tracking.Data.csprojAssemblyReference.cache
+C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Tracking.Data\obj\Debug\netcoreapp3.1\Tracking.Data.AssemblyInfoInputs.cache
+C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Tracking.Data\obj\Debug\netcoreapp3.1\Tracking.Data.AssemblyInfo.cs
+C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Tracking.Data\bin\Debug\netcoreapp3.1\Tracking.Data.pdb
+C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Tracking.Data\obj\Debug\netcoreapp3.1\Tracking.Data.dll
+C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Tracking.Data\obj\Debug\netcoreapp3.1\Tracking.Data.pdb
+C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Tracking.Data\bin\Debug\netcoreapp3.1\Tracking.Services.dll
+C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Tracking.Data\bin\Debug\netcoreapp3.1\Tracking.Services.pdb
+C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Tracking.Data\obj\Debug\netcoreapp3.1\Tracking.Data.csproj.CopyComplete
+C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Tracking.Data\bin\Debug\netcoreapp3.1\Tracking.Data.dll.config
+C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Tracking.Data\obj\Debug\netcoreapp3.1\Tracking.Data.csproj.CoreCompileInputs.cache

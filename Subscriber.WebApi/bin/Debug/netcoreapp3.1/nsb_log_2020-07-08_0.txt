@@ -1,0 +1,22 @@
+﻿2020-07-08 18:32:26.452 INFO  Logging to 'C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Subscriber.WebApi\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-08 18:32:26.688 INFO  Auditing processed messages to 'audit'
+2020-07-08 18:32:26.775 INFO  Selected active license from C:\Users\rina lerner\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-05
+2020-07-08 18:32:46.493 INFO  Logging to 'C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Subscriber.WebApi\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-08 18:32:46.773 INFO  Auditing processed messages to 'audit'
+2020-07-08 18:32:46.879 INFO  Selected active license from C:\Users\rina lerner\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-05
+2020-07-08 18:35:42.883 INFO  Logging to 'C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Subscriber.WebApi\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-08 18:35:43.531 INFO  Auditing processed messages to 'audit'
+2020-07-08 18:35:43.764 INFO  Selected active license from C:\Users\rina lerner\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-05
+2020-07-08 18:38:15.536 INFO  Logging to 'C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Subscriber.WebApi\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-08 18:38:16.044 INFO  Auditing processed messages to 'audit'
+2020-07-08 18:38:16.227 INFO  Selected active license from C:\Users\rina lerner\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-05
+2020-07-08 18:38:20.451 INFO  Executing 'C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Subscriber.WebApi\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-08 18:40:45.044 INFO  Logging to 'C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Subscriber.WebApi\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-08 18:40:45.894 INFO  Auditing processed messages to 'audit'
+2020-07-08 18:40:46.104 INFO  Selected active license from C:\Users\rina lerner\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-05
+2020-07-08 18:40:50.238 INFO  Executing 'C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Subscriber.WebApi\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'

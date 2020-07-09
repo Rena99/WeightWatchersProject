@@ -1,0 +1,1024 @@
+﻿2020-07-09 09:50:05.899 INFO  Logging to 'C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Tracking.Messaging\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-09 09:50:06.971 INFO  Selected active license from C:\Users\rina lerner\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-05
+2020-07-09 09:50:08.152 INFO  Executing 'C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Tracking.Messaging\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-09 09:50:26.848 INFO  Immediate Retry is going to retry message '53046c4d-b221-47c9-b614-abf30070bb2f' because of an exception:
+System.InvalidOperationException: Unable to resolve type: Tracking.Messaging.TrackingHandler, service name: 
+ ---> System.InvalidOperationException: Unresolved dependency [Target Type: Tracking.Messaging.TrackingHandler], [Parameter: trackingService(Tracking.Services.ITrackingService)], [Requested dependency: ServiceType:Tracking.Services.ITrackingService, ServiceName:]
+   at LightInject.ServiceContainer.GetEmitMethodForDependency(Dependency dependency)
+   at LightInject.ServiceContainer.EmitConstructorDependency(IEmitter emitter, Dependency dependency)
+   at LightInject.ServiceContainer.EmitConstructorDependencies(ConstructionInfo constructionInfo, IEmitter emitter, Action`1 decoratorTargetEmitter)
+   at LightInject.ServiceContainer.EmitNewInstanceUsingImplementingType(IEmitter emitter, ConstructionInfo constructionInfo, Action`1 decoratorTargetEmitMethod)
+   at LightInject.ServiceContainer.EmitNewInstance(ServiceRegistration serviceRegistration, IEmitter emitter)
+   at LightInject.ServiceContainer.<>c__DisplayClass184_0.<ResolveEmitMethod>b__2(IEmitter ms)
+   at LightInject.ServiceContainer.CreateDynamicMethodDelegate(Action`1 serviceEmitter)
+   at LightInject.ServiceContainer.CreateInstanceDelegateIndex(Action`1 emitMethod)
+   at LightInject.ServiceContainer.EmitLifetime(ServiceRegistration serviceRegistration, Action`1 emitMethod, IEmitter emitter)
+   at LightInject.ServiceContainer.<>c__DisplayClass184_0.<ResolveEmitMethod>b__1(IEmitter methodSkeleton)
+   at LightInject.ServiceContainer.<>c__DisplayClass139_0.<CreateEmitMethodWrapper>b__0(IEmitter ms)
+   at LightInject.ServiceContainer.CreateDynamicMethodDelegate(Action`1 serviceEmitter)
+   at LightInject.ServiceContainer.CreateDelegate(Type serviceType, String serviceName, Boolean throwError)
+   --- End of inner exception stack trace ---
+   at LightInject.ServiceContainer.CreateDelegate(Type serviceType, String serviceName, Boolean throwError)
+   at LightInject.ServiceContainer.CreateDefaultDelegate(Type serviceType, Boolean throwError)
+   at LightInject.ServiceContainer.GetInstance(Type serviceType)
+   at LightInject.Scope.<>c__DisplayClass22_0.<GetInstance>b__0()
+   at LightInject.Scope.WithThisScope[T](Func`1 function)
+   at LightInject.Scope.GetInstance(Type serviceType)
+   at NServiceBus.LightInjectObjectBuilder.Build(Type typeToBuild)
+   at NServiceBus.CommonObjectBuilder.Build(Type typeToBuild)
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage)
+   at CurrentSessionBehavior.Invoke(IIncomingLogicalMessageContext context, Func`1 next) in /_/src/SqlPersistence/SynchronizedStorage/CurrentSessionBehavior.cs:line 18
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next)
+   at NServiceBus.MutateIncomingMessageBehavior.InvokeIncomingMessageMutators(IIncomingLogicalMessageContext context, Func`2 next)
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.UnitOfWorkBehavior.InvokeUnitsOfWork(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.UnitOfWorkBehavior.InvokeUnitsOfWork(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.MutateIncomingTransportMessageBehavior.InvokeIncomingTransportMessagesMutators(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.Process(BasicDeliverEventArgs message)
+Exception details:
+	Message ID: 53046c4d-b221-47c9-b614-abf30070bb2f
+2020-07-09 09:50:26.959 INFO  Immediate Retry is going to retry message '53046c4d-b221-47c9-b614-abf30070bb2f' because of an exception:
+System.InvalidOperationException: Unable to resolve type: Tracking.Messaging.TrackingHandler, service name: 
+ ---> System.InvalidOperationException: Unresolved dependency [Target Type: Tracking.Messaging.TrackingHandler], [Parameter: trackingService(Tracking.Services.ITrackingService)], [Requested dependency: ServiceType:Tracking.Services.ITrackingService, ServiceName:]
+   at LightInject.ServiceContainer.GetEmitMethodForDependency(Dependency dependency)
+   at LightInject.ServiceContainer.EmitConstructorDependency(IEmitter emitter, Dependency dependency)
+   at LightInject.ServiceContainer.EmitConstructorDependencies(ConstructionInfo constructionInfo, IEmitter emitter, Action`1 decoratorTargetEmitter)
+   at LightInject.ServiceContainer.EmitNewInstanceUsingImplementingType(IEmitter emitter, ConstructionInfo constructionInfo, Action`1 decoratorTargetEmitMethod)
+   at LightInject.ServiceContainer.EmitNewInstance(ServiceRegistration serviceRegistration, IEmitter emitter)
+   at LightInject.ServiceContainer.<>c__DisplayClass184_0.<ResolveEmitMethod>b__2(IEmitter ms)
+   at LightInject.ServiceContainer.CreateDynamicMethodDelegate(Action`1 serviceEmitter)
+   at LightInject.ServiceContainer.CreateInstanceDelegateIndex(Action`1 emitMethod)
+   at LightInject.ServiceContainer.EmitLifetime(ServiceRegistration serviceRegistration, Action`1 emitMethod, IEmitter emitter)
+   at LightInject.ServiceContainer.<>c__DisplayClass184_0.<ResolveEmitMethod>b__1(IEmitter methodSkeleton)
+   at LightInject.ServiceContainer.<>c__DisplayClass139_0.<CreateEmitMethodWrapper>b__0(IEmitter ms)
+   at LightInject.ServiceContainer.CreateDynamicMethodDelegate(Action`1 serviceEmitter)
+   at LightInject.ServiceContainer.CreateDelegate(Type serviceType, String serviceName, Boolean throwError)
+   --- End of inner exception stack trace ---
+   at LightInject.ServiceContainer.CreateDelegate(Type serviceType, String serviceName, Boolean throwError)
+   at LightInject.ServiceContainer.CreateDefaultDelegate(Type serviceType, Boolean throwError)
+   at LightInject.ServiceContainer.GetInstance(Type serviceType)
+   at LightInject.Scope.<>c__DisplayClass22_0.<GetInstance>b__0()
+   at LightInject.Scope.WithThisScope[T](Func`1 function)
+   at LightInject.Scope.GetInstance(Type serviceType)
+   at NServiceBus.LightInjectObjectBuilder.Build(Type typeToBuild)
+   at NServiceBus.CommonObjectBuilder.Build(Type typeToBuild)
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage)
+   at CurrentSessionBehavior.Invoke(IIncomingLogicalMessageContext context, Func`1 next) in /_/src/SqlPersistence/SynchronizedStorage/CurrentSessionBehavior.cs:line 18
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next)
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.Process(BasicDeliverEventArgs message)
+Exception details:
+	Message ID: 53046c4d-b221-47c9-b614-abf30070bb2f
+2020-07-09 09:50:27.056 INFO  Immediate Retry is going to retry message '53046c4d-b221-47c9-b614-abf30070bb2f' because of an exception:
+System.InvalidOperationException: Unable to resolve type: Tracking.Messaging.TrackingHandler, service name: 
+ ---> System.InvalidOperationException: Unresolved dependency [Target Type: Tracking.Messaging.TrackingHandler], [Parameter: trackingService(Tracking.Services.ITrackingService)], [Requested dependency: ServiceType:Tracking.Services.ITrackingService, ServiceName:]
+   at LightInject.ServiceContainer.GetEmitMethodForDependency(Dependency dependency)
+   at LightInject.ServiceContainer.EmitConstructorDependency(IEmitter emitter, Dependency dependency)
+   at LightInject.ServiceContainer.EmitConstructorDependencies(ConstructionInfo constructionInfo, IEmitter emitter, Action`1 decoratorTargetEmitter)
+   at LightInject.ServiceContainer.EmitNewInstanceUsingImplementingType(IEmitter emitter, ConstructionInfo constructionInfo, Action`1 decoratorTargetEmitMethod)
+   at LightInject.ServiceContainer.EmitNewInstance(ServiceRegistration serviceRegistration, IEmitter emitter)
+   at LightInject.ServiceContainer.<>c__DisplayClass184_0.<ResolveEmitMethod>b__2(IEmitter ms)
+   at LightInject.ServiceContainer.CreateDynamicMethodDelegate(Action`1 serviceEmitter)
+   at LightInject.ServiceContainer.CreateInstanceDelegateIndex(Action`1 emitMethod)
+   at LightInject.ServiceContainer.EmitLifetime(ServiceRegistration serviceRegistration, Action`1 emitMethod, IEmitter emitter)
+   at LightInject.ServiceContainer.<>c__DisplayClass184_0.<ResolveEmitMethod>b__1(IEmitter methodSkeleton)
+   at LightInject.ServiceContainer.<>c__DisplayClass139_0.<CreateEmitMethodWrapper>b__0(IEmitter ms)
+   at LightInject.ServiceContainer.CreateDynamicMethodDelegate(Action`1 serviceEmitter)
+   at LightInject.ServiceContainer.CreateDelegate(Type serviceType, String serviceName, Boolean throwError)
+   --- End of inner exception stack trace ---
+   at LightInject.ServiceContainer.CreateDelegate(Type serviceType, String serviceName, Boolean throwError)
+   at LightInject.ServiceContainer.CreateDefaultDelegate(Type serviceType, Boolean throwError)
+   at LightInject.ServiceContainer.GetInstance(Type serviceType)
+   at LightInject.Scope.<>c__DisplayClass22_0.<GetInstance>b__0()
+   at LightInject.Scope.WithThisScope[T](Func`1 function)
+   at LightInject.Scope.GetInstance(Type serviceType)
+   at NServiceBus.LightInjectObjectBuilder.Build(Type typeToBuild)
+   at NServiceBus.CommonObjectBuilder.Build(Type typeToBuild)
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage)
+   at CurrentSessionBehavior.Invoke(IIncomingLogicalMessageContext context, Func`1 next) in /_/src/SqlPersistence/SynchronizedStorage/CurrentSessionBehavior.cs:line 18
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next)
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.Process(BasicDeliverEventArgs message)
+Exception details:
+	Message ID: 53046c4d-b221-47c9-b614-abf30070bb2f
+2020-07-09 09:50:27.146 INFO  Immediate Retry is going to retry message '53046c4d-b221-47c9-b614-abf30070bb2f' because of an exception:
+System.InvalidOperationException: Unable to resolve type: Tracking.Messaging.TrackingHandler, service name: 
+ ---> System.InvalidOperationException: Unresolved dependency [Target Type: Tracking.Messaging.TrackingHandler], [Parameter: trackingService(Tracking.Services.ITrackingService)], [Requested dependency: ServiceType:Tracking.Services.ITrackingService, ServiceName:]
+   at LightInject.ServiceContainer.GetEmitMethodForDependency(Dependency dependency)
+   at LightInject.ServiceContainer.EmitConstructorDependency(IEmitter emitter, Dependency dependency)
+   at LightInject.ServiceContainer.EmitConstructorDependencies(ConstructionInfo constructionInfo, IEmitter emitter, Action`1 decoratorTargetEmitter)
+   at LightInject.ServiceContainer.EmitNewInstanceUsingImplementingType(IEmitter emitter, ConstructionInfo constructionInfo, Action`1 decoratorTargetEmitMethod)
+   at LightInject.ServiceContainer.EmitNewInstance(ServiceRegistration serviceRegistration, IEmitter emitter)
+   at LightInject.ServiceContainer.<>c__DisplayClass184_0.<ResolveEmitMethod>b__2(IEmitter ms)
+   at LightInject.ServiceContainer.CreateDynamicMethodDelegate(Action`1 serviceEmitter)
+   at LightInject.ServiceContainer.CreateInstanceDelegateIndex(Action`1 emitMethod)
+   at LightInject.ServiceContainer.EmitLifetime(ServiceRegistration serviceRegistration, Action`1 emitMethod, IEmitter emitter)
+   at LightInject.ServiceContainer.<>c__DisplayClass184_0.<ResolveEmitMethod>b__1(IEmitter methodSkeleton)
+   at LightInject.ServiceContainer.<>c__DisplayClass139_0.<CreateEmitMethodWrapper>b__0(IEmitter ms)
+   at LightInject.ServiceContainer.CreateDynamicMethodDelegate(Action`1 serviceEmitter)
+   at LightInject.ServiceContainer.CreateDelegate(Type serviceType, String serviceName, Boolean throwError)
+   --- End of inner exception stack trace ---
+   at LightInject.ServiceContainer.CreateDelegate(Type serviceType, String serviceName, Boolean throwError)
+   at LightInject.ServiceContainer.CreateDefaultDelegate(Type serviceType, Boolean throwError)
+   at LightInject.ServiceContainer.GetInstance(Type serviceType)
+   at LightInject.Scope.<>c__DisplayClass22_0.<GetInstance>b__0()
+   at LightInject.Scope.WithThisScope[T](Func`1 function)
+   at LightInject.Scope.GetInstance(Type serviceType)
+   at NServiceBus.LightInjectObjectBuilder.Build(Type typeToBuild)
+   at NServiceBus.CommonObjectBuilder.Build(Type typeToBuild)
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage)
+   at CurrentSessionBehavior.Invoke(IIncomingLogicalMessageContext context, Func`1 next) in /_/src/SqlPersistence/SynchronizedStorage/CurrentSessionBehavior.cs:line 18
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next)
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.Process(BasicDeliverEventArgs message)
+Exception details:
+	Message ID: 53046c4d-b221-47c9-b614-abf30070bb2f
+2020-07-09 09:50:27.216 INFO  Immediate Retry is going to retry message '53046c4d-b221-47c9-b614-abf30070bb2f' because of an exception:
+System.InvalidOperationException: Unable to resolve type: Tracking.Messaging.TrackingHandler, service name: 
+ ---> System.InvalidOperationException: Unresolved dependency [Target Type: Tracking.Messaging.TrackingHandler], [Parameter: trackingService(Tracking.Services.ITrackingService)], [Requested dependency: ServiceType:Tracking.Services.ITrackingService, ServiceName:]
+   at LightInject.ServiceContainer.GetEmitMethodForDependency(Dependency dependency)
+   at LightInject.ServiceContainer.EmitConstructorDependency(IEmitter emitter, Dependency dependency)
+   at LightInject.ServiceContainer.EmitConstructorDependencies(ConstructionInfo constructionInfo, IEmitter emitter, Action`1 decoratorTargetEmitter)
+   at LightInject.ServiceContainer.EmitNewInstanceUsingImplementingType(IEmitter emitter, ConstructionInfo constructionInfo, Action`1 decoratorTargetEmitMethod)
+   at LightInject.ServiceContainer.EmitNewInstance(ServiceRegistration serviceRegistration, IEmitter emitter)
+   at LightInject.ServiceContainer.<>c__DisplayClass184_0.<ResolveEmitMethod>b__2(IEmitter ms)
+   at LightInject.ServiceContainer.CreateDynamicMethodDelegate(Action`1 serviceEmitter)
+   at LightInject.ServiceContainer.CreateInstanceDelegateIndex(Action`1 emitMethod)
+   at LightInject.ServiceContainer.EmitLifetime(ServiceRegistration serviceRegistration, Action`1 emitMethod, IEmitter emitter)
+   at LightInject.ServiceContainer.<>c__DisplayClass184_0.<ResolveEmitMethod>b__1(IEmitter methodSkeleton)
+   at LightInject.ServiceContainer.<>c__DisplayClass139_0.<CreateEmitMethodWrapper>b__0(IEmitter ms)
+   at LightInject.ServiceContainer.CreateDynamicMethodDelegate(Action`1 serviceEmitter)
+   at LightInject.ServiceContainer.CreateDelegate(Type serviceType, String serviceName, Boolean throwError)
+   --- End of inner exception stack trace ---
+   at LightInject.ServiceContainer.CreateDelegate(Type serviceType, String serviceName, Boolean throwError)
+   at LightInject.ServiceContainer.CreateDefaultDelegate(Type serviceType, Boolean throwError)
+   at LightInject.ServiceContainer.GetInstance(Type serviceType)
+   at LightInject.Scope.<>c__DisplayClass22_0.<GetInstance>b__0()
+   at LightInject.Scope.WithThisScope[T](Func`1 function)
+   at LightInject.Scope.GetInstance(Type serviceType)
+   at NServiceBus.LightInjectObjectBuilder.Build(Type typeToBuild)
+   at NServiceBus.CommonObjectBuilder.Build(Type typeToBuild)
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage)
+   at CurrentSessionBehavior.Invoke(IIncomingLogicalMessageContext context, Func`1 next) in /_/src/SqlPersistence/SynchronizedStorage/CurrentSessionBehavior.cs:line 18
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next)
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.Process(BasicDeliverEventArgs message)
+Exception details:
+	Message ID: 53046c4d-b221-47c9-b614-abf30070bb2f
+2020-07-09 09:50:27.328 WARN  Delayed Retry will reschedule message '53046c4d-b221-47c9-b614-abf30070bb2f' after a delay of 00:00:01 because of an exception:
+System.InvalidOperationException: Unable to resolve type: Tracking.Messaging.TrackingHandler, service name: 
+ ---> System.InvalidOperationException: Unresolved dependency [Target Type: Tracking.Messaging.TrackingHandler], [Parameter: trackingService(Tracking.Services.ITrackingService)], [Requested dependency: ServiceType:Tracking.Services.ITrackingService, ServiceName:]
+   at LightInject.ServiceContainer.GetEmitMethodForDependency(Dependency dependency)
+   at LightInject.ServiceContainer.EmitConstructorDependency(IEmitter emitter, Dependency dependency)
+   at LightInject.ServiceContainer.EmitConstructorDependencies(ConstructionInfo constructionInfo, IEmitter emitter, Action`1 decoratorTargetEmitter)
+   at LightInject.ServiceContainer.EmitNewInstanceUsingImplementingType(IEmitter emitter, ConstructionInfo constructionInfo, Action`1 decoratorTargetEmitMethod)
+   at LightInject.ServiceContainer.EmitNewInstance(ServiceRegistration serviceRegistration, IEmitter emitter)
+   at LightInject.ServiceContainer.<>c__DisplayClass184_0.<ResolveEmitMethod>b__2(IEmitter ms)
+   at LightInject.ServiceContainer.CreateDynamicMethodDelegate(Action`1 serviceEmitter)
+   at LightInject.ServiceContainer.CreateInstanceDelegateIndex(Action`1 emitMethod)
+   at LightInject.ServiceContainer.EmitLifetime(ServiceRegistration serviceRegistration, Action`1 emitMethod, IEmitter emitter)
+   at LightInject.ServiceContainer.<>c__DisplayClass184_0.<ResolveEmitMethod>b__1(IEmitter methodSkeleton)
+   at LightInject.ServiceContainer.<>c__DisplayClass139_0.<CreateEmitMethodWrapper>b__0(IEmitter ms)
+   at LightInject.ServiceContainer.CreateDynamicMethodDelegate(Action`1 serviceEmitter)
+   at LightInject.ServiceContainer.CreateDelegate(Type serviceType, String serviceName, Boolean throwError)
+   --- End of inner exception stack trace ---
+   at LightInject.ServiceContainer.CreateDelegate(Type serviceType, String serviceName, Boolean throwError)
+   at LightInject.ServiceContainer.CreateDefaultDelegate(Type serviceType, Boolean throwError)
+   at LightInject.ServiceContainer.GetInstance(Type serviceType)
+   at LightInject.Scope.<>c__DisplayClass22_0.<GetInstance>b__0()
+   at LightInject.Scope.WithThisScope[T](Func`1 function)
+   at LightInject.Scope.GetInstance(Type serviceType)
+   at NServiceBus.LightInjectObjectBuilder.Build(Type typeToBuild)
+   at NServiceBus.CommonObjectBuilder.Build(Type typeToBuild)
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage)
+   at CurrentSessionBehavior.Invoke(IIncomingLogicalMessageContext context, Func`1 next) in /_/src/SqlPersistence/SynchronizedStorage/CurrentSessionBehavior.cs:line 18
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next)
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.Process(BasicDeliverEventArgs message)
+Exception details:
+	Message ID: 53046c4d-b221-47c9-b614-abf30070bb2f
+2020-07-09 09:50:28.450 INFO  Immediate Retry is going to retry message '53046c4d-b221-47c9-b614-abf30070bb2f' because of an exception:
+System.InvalidOperationException: Unable to resolve type: Tracking.Messaging.TrackingHandler, service name: 
+ ---> System.InvalidOperationException: Unresolved dependency [Target Type: Tracking.Messaging.TrackingHandler], [Parameter: trackingService(Tracking.Services.ITrackingService)], [Requested dependency: ServiceType:Tracking.Services.ITrackingService, ServiceName:]
+   at LightInject.ServiceContainer.GetEmitMethodForDependency(Dependency dependency)
+   at LightInject.ServiceContainer.EmitConstructorDependency(IEmitter emitter, Dependency dependency)
+   at LightInject.ServiceContainer.EmitConstructorDependencies(ConstructionInfo constructionInfo, IEmitter emitter, Action`1 decoratorTargetEmitter)
+   at LightInject.ServiceContainer.EmitNewInstanceUsingImplementingType(IEmitter emitter, ConstructionInfo constructionInfo, Action`1 decoratorTargetEmitMethod)
+   at LightInject.ServiceContainer.EmitNewInstance(ServiceRegistration serviceRegistration, IEmitter emitter)
+   at LightInject.ServiceContainer.<>c__DisplayClass184_0.<ResolveEmitMethod>b__2(IEmitter ms)
+   at LightInject.ServiceContainer.CreateDynamicMethodDelegate(Action`1 serviceEmitter)
+   at LightInject.ServiceContainer.CreateInstanceDelegateIndex(Action`1 emitMethod)
+   at LightInject.ServiceContainer.EmitLifetime(ServiceRegistration serviceRegistration, Action`1 emitMethod, IEmitter emitter)
+   at LightInject.ServiceContainer.<>c__DisplayClass184_0.<ResolveEmitMethod>b__1(IEmitter methodSkeleton)
+   at LightInject.ServiceContainer.<>c__DisplayClass139_0.<CreateEmitMethodWrapper>b__0(IEmitter ms)
+   at LightInject.ServiceContainer.CreateDynamicMethodDelegate(Action`1 serviceEmitter)
+   at LightInject.ServiceContainer.CreateDelegate(Type serviceType, String serviceName, Boolean throwError)
+   --- End of inner exception stack trace ---
+   at LightInject.ServiceContainer.CreateDelegate(Type serviceType, String serviceName, Boolean throwError)
+   at LightInject.ServiceContainer.CreateDefaultDelegate(Type serviceType, Boolean throwError)
+   at LightInject.ServiceContainer.GetInstance(Type serviceType)
+   at LightInject.Scope.<>c__DisplayClass22_0.<GetInstance>b__0()
+   at LightInject.Scope.WithThisScope[T](Func`1 function)
+   at LightInject.Scope.GetInstance(Type serviceType)
+   at NServiceBus.LightInjectObjectBuilder.Build(Type typeToBuild)
+   at NServiceBus.CommonObjectBuilder.Build(Type typeToBuild)
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage)
+   at CurrentSessionBehavior.Invoke(IIncomingLogicalMessageContext context, Func`1 next) in /_/src/SqlPersistence/SynchronizedStorage/CurrentSessionBehavior.cs:line 18
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next)
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.Process(BasicDeliverEventArgs message)
+Exception details:
+	Message ID: 53046c4d-b221-47c9-b614-abf30070bb2f
+2020-07-09 09:50:28.540 INFO  Immediate Retry is going to retry message '53046c4d-b221-47c9-b614-abf30070bb2f' because of an exception:
+System.InvalidOperationException: Unable to resolve type: Tracking.Messaging.TrackingHandler, service name: 
+ ---> System.InvalidOperationException: Unresolved dependency [Target Type: Tracking.Messaging.TrackingHandler], [Parameter: trackingService(Tracking.Services.ITrackingService)], [Requested dependency: ServiceType:Tracking.Services.ITrackingService, ServiceName:]
+   at LightInject.ServiceContainer.GetEmitMethodForDependency(Dependency dependency)
+   at LightInject.ServiceContainer.EmitConstructorDependency(IEmitter emitter, Dependency dependency)
+   at LightInject.ServiceContainer.EmitConstructorDependencies(ConstructionInfo constructionInfo, IEmitter emitter, Action`1 decoratorTargetEmitter)
+   at LightInject.ServiceContainer.EmitNewInstanceUsingImplementingType(IEmitter emitter, ConstructionInfo constructionInfo, Action`1 decoratorTargetEmitMethod)
+   at LightInject.ServiceContainer.EmitNewInstance(ServiceRegistration serviceRegistration, IEmitter emitter)
+   at LightInject.ServiceContainer.<>c__DisplayClass184_0.<ResolveEmitMethod>b__2(IEmitter ms)
+   at LightInject.ServiceContainer.CreateDynamicMethodDelegate(Action`1 serviceEmitter)
+   at LightInject.ServiceContainer.CreateInstanceDelegateIndex(Action`1 emitMethod)
+   at LightInject.ServiceContainer.EmitLifetime(ServiceRegistration serviceRegistration, Action`1 emitMethod, IEmitter emitter)
+   at LightInject.ServiceContainer.<>c__DisplayClass184_0.<ResolveEmitMethod>b__1(IEmitter methodSkeleton)
+   at LightInject.ServiceContainer.<>c__DisplayClass139_0.<CreateEmitMethodWrapper>b__0(IEmitter ms)
+   at LightInject.ServiceContainer.CreateDynamicMethodDelegate(Action`1 serviceEmitter)
+   at LightInject.ServiceContainer.CreateDelegate(Type serviceType, String serviceName, Boolean throwError)
+   --- End of inner exception stack trace ---
+   at LightInject.ServiceContainer.CreateDelegate(Type serviceType, String serviceName, Boolean throwError)
+   at LightInject.ServiceContainer.CreateDefaultDelegate(Type serviceType, Boolean throwError)
+   at LightInject.ServiceContainer.GetInstance(Type serviceType)
+   at LightInject.Scope.<>c__DisplayClass22_0.<GetInstance>b__0()
+   at LightInject.Scope.WithThisScope[T](Func`1 function)
+   at LightInject.Scope.GetInstance(Type serviceType)
+   at NServiceBus.LightInjectObjectBuilder.Build(Type typeToBuild)
+   at NServiceBus.CommonObjectBuilder.Build(Type typeToBuild)
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage)
+   at CurrentSessionBehavior.Invoke(IIncomingLogicalMessageContext context, Func`1 next) in /_/src/SqlPersistence/SynchronizedStorage/CurrentSessionBehavior.cs:line 18
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next)
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.Process(BasicDeliverEventArgs message)
+Exception details:
+	Message ID: 53046c4d-b221-47c9-b614-abf30070bb2f
+2020-07-09 09:50:28.646 INFO  Immediate Retry is going to retry message '53046c4d-b221-47c9-b614-abf30070bb2f' because of an exception:
+System.InvalidOperationException: Unable to resolve type: Tracking.Messaging.TrackingHandler, service name: 
+ ---> System.InvalidOperationException: Unresolved dependency [Target Type: Tracking.Messaging.TrackingHandler], [Parameter: trackingService(Tracking.Services.ITrackingService)], [Requested dependency: ServiceType:Tracking.Services.ITrackingService, ServiceName:]
+   at LightInject.ServiceContainer.GetEmitMethodForDependency(Dependency dependency)
+   at LightInject.ServiceContainer.EmitConstructorDependency(IEmitter emitter, Dependency dependency)
+   at LightInject.ServiceContainer.EmitConstructorDependencies(ConstructionInfo constructionInfo, IEmitter emitter, Action`1 decoratorTargetEmitter)
+   at LightInject.ServiceContainer.EmitNewInstanceUsingImplementingType(IEmitter emitter, ConstructionInfo constructionInfo, Action`1 decoratorTargetEmitMethod)
+   at LightInject.ServiceContainer.EmitNewInstance(ServiceRegistration serviceRegistration, IEmitter emitter)
+   at LightInject.ServiceContainer.<>c__DisplayClass184_0.<ResolveEmitMethod>b__2(IEmitter ms)
+   at LightInject.ServiceContainer.CreateDynamicMethodDelegate(Action`1 serviceEmitter)
+   at LightInject.ServiceContainer.CreateInstanceDelegateIndex(Action`1 emitMethod)
+   at LightInject.ServiceContainer.EmitLifetime(ServiceRegistration serviceRegistration, Action`1 emitMethod, IEmitter emitter)
+   at LightInject.ServiceContainer.<>c__DisplayClass184_0.<ResolveEmitMethod>b__1(IEmitter methodSkeleton)
+   at LightInject.ServiceContainer.<>c__DisplayClass139_0.<CreateEmitMethodWrapper>b__0(IEmitter ms)
+   at LightInject.ServiceContainer.CreateDynamicMethodDelegate(Action`1 serviceEmitter)
+   at LightInject.ServiceContainer.CreateDelegate(Type serviceType, String serviceName, Boolean throwError)
+   --- End of inner exception stack trace ---
+   at LightInject.ServiceContainer.CreateDelegate(Type serviceType, String serviceName, Boolean throwError)
+   at LightInject.ServiceContainer.CreateDefaultDelegate(Type serviceType, Boolean throwError)
+   at LightInject.ServiceContainer.GetInstance(Type serviceType)
+   at LightInject.Scope.<>c__DisplayClass22_0.<GetInstance>b__0()
+   at LightInject.Scope.WithThisScope[T](Func`1 function)
+   at LightInject.Scope.GetInstance(Type serviceType)
+   at NServiceBus.LightInjectObjectBuilder.Build(Type typeToBuild)
+   at NServiceBus.CommonObjectBuilder.Build(Type typeToBuild)
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage)
+   at CurrentSessionBehavior.Invoke(IIncomingLogicalMessageContext context, Func`1 next) in /_/src/SqlPersistence/SynchronizedStorage/CurrentSessionBehavior.cs:line 18
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next)
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.Process(BasicDeliverEventArgs message)
+Exception details:
+	Message ID: 53046c4d-b221-47c9-b614-abf30070bb2f
+2020-07-09 09:50:28.717 INFO  Immediate Retry is going to retry message '53046c4d-b221-47c9-b614-abf30070bb2f' because of an exception:
+System.InvalidOperationException: Unable to resolve type: Tracking.Messaging.TrackingHandler, service name: 
+ ---> System.InvalidOperationException: Unresolved dependency [Target Type: Tracking.Messaging.TrackingHandler], [Parameter: trackingService(Tracking.Services.ITrackingService)], [Requested dependency: ServiceType:Tracking.Services.ITrackingService, ServiceName:]
+   at LightInject.ServiceContainer.GetEmitMethodForDependency(Dependency dependency)
+   at LightInject.ServiceContainer.EmitConstructorDependency(IEmitter emitter, Dependency dependency)
+   at LightInject.ServiceContainer.EmitConstructorDependencies(ConstructionInfo constructionInfo, IEmitter emitter, Action`1 decoratorTargetEmitter)
+   at LightInject.ServiceContainer.EmitNewInstanceUsingImplementingType(IEmitter emitter, ConstructionInfo constructionInfo, Action`1 decoratorTargetEmitMethod)
+   at LightInject.ServiceContainer.EmitNewInstance(ServiceRegistration serviceRegistration, IEmitter emitter)
+   at LightInject.ServiceContainer.<>c__DisplayClass184_0.<ResolveEmitMethod>b__2(IEmitter ms)
+   at LightInject.ServiceContainer.CreateDynamicMethodDelegate(Action`1 serviceEmitter)
+   at LightInject.ServiceContainer.CreateInstanceDelegateIndex(Action`1 emitMethod)
+   at LightInject.ServiceContainer.EmitLifetime(ServiceRegistration serviceRegistration, Action`1 emitMethod, IEmitter emitter)
+   at LightInject.ServiceContainer.<>c__DisplayClass184_0.<ResolveEmitMethod>b__1(IEmitter methodSkeleton)
+   at LightInject.ServiceContainer.<>c__DisplayClass139_0.<CreateEmitMethodWrapper>b__0(IEmitter ms)
+   at LightInject.ServiceContainer.CreateDynamicMethodDelegate(Action`1 serviceEmitter)
+   at LightInject.ServiceContainer.CreateDelegate(Type serviceType, String serviceName, Boolean throwError)
+   --- End of inner exception stack trace ---
+   at LightInject.ServiceContainer.CreateDelegate(Type serviceType, String serviceName, Boolean throwError)
+   at LightInject.ServiceContainer.CreateDefaultDelegate(Type serviceType, Boolean throwError)
+   at LightInject.ServiceContainer.GetInstance(Type serviceType)
+   at LightInject.Scope.<>c__DisplayClass22_0.<GetInstance>b__0()
+   at LightInject.Scope.WithThisScope[T](Func`1 function)
+   at LightInject.Scope.GetInstance(Type serviceType)
+   at NServiceBus.LightInjectObjectBuilder.Build(Type typeToBuild)
+   at NServiceBus.CommonObjectBuilder.Build(Type typeToBuild)
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage)
+   at CurrentSessionBehavior.Invoke(IIncomingLogicalMessageContext context, Func`1 next) in /_/src/SqlPersistence/SynchronizedStorage/CurrentSessionBehavior.cs:line 18
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next)
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.Process(BasicDeliverEventArgs message)
+Exception details:
+	Message ID: 53046c4d-b221-47c9-b614-abf30070bb2f
+2020-07-09 09:50:28.760 INFO  Immediate Retry is going to retry message '53046c4d-b221-47c9-b614-abf30070bb2f' because of an exception:
+System.InvalidOperationException: Unable to resolve type: Tracking.Messaging.TrackingHandler, service name: 
+ ---> System.InvalidOperationException: Unresolved dependency [Target Type: Tracking.Messaging.TrackingHandler], [Parameter: trackingService(Tracking.Services.ITrackingService)], [Requested dependency: ServiceType:Tracking.Services.ITrackingService, ServiceName:]
+   at LightInject.ServiceContainer.GetEmitMethodForDependency(Dependency dependency)
+   at LightInject.ServiceContainer.EmitConstructorDependency(IEmitter emitter, Dependency dependency)
+   at LightInject.ServiceContainer.EmitConstructorDependencies(ConstructionInfo constructionInfo, IEmitter emitter, Action`1 decoratorTargetEmitter)
+   at LightInject.ServiceContainer.EmitNewInstanceUsingImplementingType(IEmitter emitter, ConstructionInfo constructionInfo, Action`1 decoratorTargetEmitMethod)
+   at LightInject.ServiceContainer.EmitNewInstance(ServiceRegistration serviceRegistration, IEmitter emitter)
+   at LightInject.ServiceContainer.<>c__DisplayClass184_0.<ResolveEmitMethod>b__2(IEmitter ms)
+   at LightInject.ServiceContainer.CreateDynamicMethodDelegate(Action`1 serviceEmitter)
+   at LightInject.ServiceContainer.CreateInstanceDelegateIndex(Action`1 emitMethod)
+   at LightInject.ServiceContainer.EmitLifetime(ServiceRegistration serviceRegistration, Action`1 emitMethod, IEmitter emitter)
+   at LightInject.ServiceContainer.<>c__DisplayClass184_0.<ResolveEmitMethod>b__1(IEmitter methodSkeleton)
+   at LightInject.ServiceContainer.<>c__DisplayClass139_0.<CreateEmitMethodWrapper>b__0(IEmitter ms)
+   at LightInject.ServiceContainer.CreateDynamicMethodDelegate(Action`1 serviceEmitter)
+   at LightInject.ServiceContainer.CreateDelegate(Type serviceType, String serviceName, Boolean throwError)
+   --- End of inner exception stack trace ---
+   at LightInject.ServiceContainer.CreateDelegate(Type serviceType, String serviceName, Boolean throwError)
+   at LightInject.ServiceContainer.CreateDefaultDelegate(Type serviceType, Boolean throwError)
+   at LightInject.ServiceContainer.GetInstance(Type serviceType)
+   at LightInject.Scope.<>c__DisplayClass22_0.<GetInstance>b__0()
+   at LightInject.Scope.WithThisScope[T](Func`1 function)
+   at LightInject.Scope.GetInstance(Type serviceType)
+   at NServiceBus.LightInjectObjectBuilder.Build(Type typeToBuild)
+   at NServiceBus.CommonObjectBuilder.Build(Type typeToBuild)
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage)
+   at CurrentSessionBehavior.Invoke(IIncomingLogicalMessageContext context, Func`1 next) in /_/src/SqlPersistence/SynchronizedStorage/CurrentSessionBehavior.cs:line 18
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next)
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.Process(BasicDeliverEventArgs message)
+Exception details:
+	Message ID: 53046c4d-b221-47c9-b614-abf30070bb2f
+2020-07-09 09:50:28.809 WARN  Delayed Retry will reschedule message '53046c4d-b221-47c9-b614-abf30070bb2f' after a delay of 00:00:02 because of an exception:
+System.InvalidOperationException: Unable to resolve type: Tracking.Messaging.TrackingHandler, service name: 
+ ---> System.InvalidOperationException: Unresolved dependency [Target Type: Tracking.Messaging.TrackingHandler], [Parameter: trackingService(Tracking.Services.ITrackingService)], [Requested dependency: ServiceType:Tracking.Services.ITrackingService, ServiceName:]
+   at LightInject.ServiceContainer.GetEmitMethodForDependency(Dependency dependency)
+   at LightInject.ServiceContainer.EmitConstructorDependency(IEmitter emitter, Dependency dependency)
+   at LightInject.ServiceContainer.EmitConstructorDependencies(ConstructionInfo constructionInfo, IEmitter emitter, Action`1 decoratorTargetEmitter)
+   at LightInject.ServiceContainer.EmitNewInstanceUsingImplementingType(IEmitter emitter, ConstructionInfo constructionInfo, Action`1 decoratorTargetEmitMethod)
+   at LightInject.ServiceContainer.EmitNewInstance(ServiceRegistration serviceRegistration, IEmitter emitter)
+   at LightInject.ServiceContainer.<>c__DisplayClass184_0.<ResolveEmitMethod>b__2(IEmitter ms)
+   at LightInject.ServiceContainer.CreateDynamicMethodDelegate(Action`1 serviceEmitter)
+   at LightInject.ServiceContainer.CreateInstanceDelegateIndex(Action`1 emitMethod)
+   at LightInject.ServiceContainer.EmitLifetime(ServiceRegistration serviceRegistration, Action`1 emitMethod, IEmitter emitter)
+   at LightInject.ServiceContainer.<>c__DisplayClass184_0.<ResolveEmitMethod>b__1(IEmitter methodSkeleton)
+   at LightInject.ServiceContainer.<>c__DisplayClass139_0.<CreateEmitMethodWrapper>b__0(IEmitter ms)
+   at LightInject.ServiceContainer.CreateDynamicMethodDelegate(Action`1 serviceEmitter)
+   at LightInject.ServiceContainer.CreateDelegate(Type serviceType, String serviceName, Boolean throwError)
+   --- End of inner exception stack trace ---
+   at LightInject.ServiceContainer.CreateDelegate(Type serviceType, String serviceName, Boolean throwError)
+   at LightInject.ServiceContainer.CreateDefaultDelegate(Type serviceType, Boolean throwError)
+   at LightInject.ServiceContainer.GetInstance(Type serviceType)
+   at LightInject.Scope.<>c__DisplayClass22_0.<GetInstance>b__0()
+   at LightInject.Scope.WithThisScope[T](Func`1 function)
+   at LightInject.Scope.GetInstance(Type serviceType)
+   at NServiceBus.LightInjectObjectBuilder.Build(Type typeToBuild)
+   at NServiceBus.CommonObjectBuilder.Build(Type typeToBuild)
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage)
+   at CurrentSessionBehavior.Invoke(IIncomingLogicalMessageContext context, Func`1 next) in /_/src/SqlPersistence/SynchronizedStorage/CurrentSessionBehavior.cs:line 18
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next)
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.Process(BasicDeliverEventArgs message)
+Exception details:
+	Message ID: 53046c4d-b221-47c9-b614-abf30070bb2f
+2020-07-09 09:50:30.885 INFO  Immediate Retry is going to retry message '53046c4d-b221-47c9-b614-abf30070bb2f' because of an exception:
+System.InvalidOperationException: Unable to resolve type: Tracking.Messaging.TrackingHandler, service name: 
+ ---> System.InvalidOperationException: Unresolved dependency [Target Type: Tracking.Messaging.TrackingHandler], [Parameter: trackingService(Tracking.Services.ITrackingService)], [Requested dependency: ServiceType:Tracking.Services.ITrackingService, ServiceName:]
+   at LightInject.ServiceContainer.GetEmitMethodForDependency(Dependency dependency)
+   at LightInject.ServiceContainer.EmitConstructorDependency(IEmitter emitter, Dependency dependency)
+   at LightInject.ServiceContainer.EmitConstructorDependencies(ConstructionInfo constructionInfo, IEmitter emitter, Action`1 decoratorTargetEmitter)
+   at LightInject.ServiceContainer.EmitNewInstanceUsingImplementingType(IEmitter emitter, ConstructionInfo constructionInfo, Action`1 decoratorTargetEmitMethod)
+   at LightInject.ServiceContainer.EmitNewInstance(ServiceRegistration serviceRegistration, IEmitter emitter)
+   at LightInject.ServiceContainer.<>c__DisplayClass184_0.<ResolveEmitMethod>b__2(IEmitter ms)
+   at LightInject.ServiceContainer.CreateDynamicMethodDelegate(Action`1 serviceEmitter)
+   at LightInject.ServiceContainer.CreateInstanceDelegateIndex(Action`1 emitMethod)
+   at LightInject.ServiceContainer.EmitLifetime(ServiceRegistration serviceRegistration, Action`1 emitMethod, IEmitter emitter)
+   at LightInject.ServiceContainer.<>c__DisplayClass184_0.<ResolveEmitMethod>b__1(IEmitter methodSkeleton)
+   at LightInject.ServiceContainer.<>c__DisplayClass139_0.<CreateEmitMethodWrapper>b__0(IEmitter ms)
+   at LightInject.ServiceContainer.CreateDynamicMethodDelegate(Action`1 serviceEmitter)
+   at LightInject.ServiceContainer.CreateDelegate(Type serviceType, String serviceName, Boolean throwError)
+   --- End of inner exception stack trace ---
+   at LightInject.ServiceContainer.CreateDelegate(Type serviceType, String serviceName, Boolean throwError)
+   at LightInject.ServiceContainer.CreateDefaultDelegate(Type serviceType, Boolean throwError)
+   at LightInject.ServiceContainer.GetInstance(Type serviceType)
+   at LightInject.Scope.<>c__DisplayClass22_0.<GetInstance>b__0()
+   at LightInject.Scope.WithThisScope[T](Func`1 function)
+   at LightInject.Scope.GetInstance(Type serviceType)
+   at NServiceBus.LightInjectObjectBuilder.Build(Type typeToBuild)
+   at NServiceBus.CommonObjectBuilder.Build(Type typeToBuild)
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage)
+   at CurrentSessionBehavior.Invoke(IIncomingLogicalMessageContext context, Func`1 next) in /_/src/SqlPersistence/SynchronizedStorage/CurrentSessionBehavior.cs:line 18
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next)
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.Process(BasicDeliverEventArgs message)
+Exception details:
+	Message ID: 53046c4d-b221-47c9-b614-abf30070bb2f
+2020-07-09 09:50:31.004 INFO  Immediate Retry is going to retry message '53046c4d-b221-47c9-b614-abf30070bb2f' because of an exception:
+System.InvalidOperationException: Unable to resolve type: Tracking.Messaging.TrackingHandler, service name: 
+ ---> System.InvalidOperationException: Unresolved dependency [Target Type: Tracking.Messaging.TrackingHandler], [Parameter: trackingService(Tracking.Services.ITrackingService)], [Requested dependency: ServiceType:Tracking.Services.ITrackingService, ServiceName:]
+   at LightInject.ServiceContainer.GetEmitMethodForDependency(Dependency dependency)
+   at LightInject.ServiceContainer.EmitConstructorDependency(IEmitter emitter, Dependency dependency)
+   at LightInject.ServiceContainer.EmitConstructorDependencies(ConstructionInfo constructionInfo, IEmitter emitter, Action`1 decoratorTargetEmitter)
+   at LightInject.ServiceContainer.EmitNewInstanceUsingImplementingType(IEmitter emitter, ConstructionInfo constructionInfo, Action`1 decoratorTargetEmitMethod)
+   at LightInject.ServiceContainer.EmitNewInstance(ServiceRegistration serviceRegistration, IEmitter emitter)
+   at LightInject.ServiceContainer.<>c__DisplayClass184_0.<ResolveEmitMethod>b__2(IEmitter ms)
+   at LightInject.ServiceContainer.CreateDynamicMethodDelegate(Action`1 serviceEmitter)
+   at LightInject.ServiceContainer.CreateInstanceDelegateIndex(Action`1 emitMethod)
+   at LightInject.ServiceContainer.EmitLifetime(ServiceRegistration serviceRegistration, Action`1 emitMethod, IEmitter emitter)
+   at LightInject.ServiceContainer.<>c__DisplayClass184_0.<ResolveEmitMethod>b__1(IEmitter methodSkeleton)
+   at LightInject.ServiceContainer.<>c__DisplayClass139_0.<CreateEmitMethodWrapper>b__0(IEmitter ms)
+   at LightInject.ServiceContainer.CreateDynamicMethodDelegate(Action`1 serviceEmitter)
+   at LightInject.ServiceContainer.CreateDelegate(Type serviceType, String serviceName, Boolean throwError)
+   --- End of inner exception stack trace ---
+   at LightInject.ServiceContainer.CreateDelegate(Type serviceType, String serviceName, Boolean throwError)
+   at LightInject.ServiceContainer.CreateDefaultDelegate(Type serviceType, Boolean throwError)
+   at LightInject.ServiceContainer.GetInstance(Type serviceType)
+   at LightInject.Scope.<>c__DisplayClass22_0.<GetInstance>b__0()
+   at LightInject.Scope.WithThisScope[T](Func`1 function)
+   at LightInject.Scope.GetInstance(Type serviceType)
+   at NServiceBus.LightInjectObjectBuilder.Build(Type typeToBuild)
+   at NServiceBus.CommonObjectBuilder.Build(Type typeToBuild)
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage)
+   at CurrentSessionBehavior.Invoke(IIncomingLogicalMessageContext context, Func`1 next) in /_/src/SqlPersistence/SynchronizedStorage/CurrentSessionBehavior.cs:line 18
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next)
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.Process(BasicDeliverEventArgs message)
+Exception details:
+	Message ID: 53046c4d-b221-47c9-b614-abf30070bb2f
+2020-07-09 09:50:31.063 INFO  Immediate Retry is going to retry message '53046c4d-b221-47c9-b614-abf30070bb2f' because of an exception:
+System.InvalidOperationException: Unable to resolve type: Tracking.Messaging.TrackingHandler, service name: 
+ ---> System.InvalidOperationException: Unresolved dependency [Target Type: Tracking.Messaging.TrackingHandler], [Parameter: trackingService(Tracking.Services.ITrackingService)], [Requested dependency: ServiceType:Tracking.Services.ITrackingService, ServiceName:]
+   at LightInject.ServiceContainer.GetEmitMethodForDependency(Dependency dependency)
+   at LightInject.ServiceContainer.EmitConstructorDependency(IEmitter emitter, Dependency dependency)
+   at LightInject.ServiceContainer.EmitConstructorDependencies(ConstructionInfo constructionInfo, IEmitter emitter, Action`1 decoratorTargetEmitter)
+   at LightInject.ServiceContainer.EmitNewInstanceUsingImplementingType(IEmitter emitter, ConstructionInfo constructionInfo, Action`1 decoratorTargetEmitMethod)
+   at LightInject.ServiceContainer.EmitNewInstance(ServiceRegistration serviceRegistration, IEmitter emitter)
+   at LightInject.ServiceContainer.<>c__DisplayClass184_0.<ResolveEmitMethod>b__2(IEmitter ms)
+   at LightInject.ServiceContainer.CreateDynamicMethodDelegate(Action`1 serviceEmitter)
+   at LightInject.ServiceContainer.CreateInstanceDelegateIndex(Action`1 emitMethod)
+   at LightInject.ServiceContainer.EmitLifetime(ServiceRegistration serviceRegistration, Action`1 emitMethod, IEmitter emitter)
+   at LightInject.ServiceContainer.<>c__DisplayClass184_0.<ResolveEmitMethod>b__1(IEmitter methodSkeleton)
+   at LightInject.ServiceContainer.<>c__DisplayClass139_0.<CreateEmitMethodWrapper>b__0(IEmitter ms)
+   at LightInject.ServiceContainer.CreateDynamicMethodDelegate(Action`1 serviceEmitter)
+   at LightInject.ServiceContainer.CreateDelegate(Type serviceType, String serviceName, Boolean throwError)
+   --- End of inner exception stack trace ---
+   at LightInject.ServiceContainer.CreateDelegate(Type serviceType, String serviceName, Boolean throwError)
+   at LightInject.ServiceContainer.CreateDefaultDelegate(Type serviceType, Boolean throwError)
+   at LightInject.ServiceContainer.GetInstance(Type serviceType)
+   at LightInject.Scope.<>c__DisplayClass22_0.<GetInstance>b__0()
+   at LightInject.Scope.WithThisScope[T](Func`1 function)
+   at LightInject.Scope.GetInstance(Type serviceType)
+   at NServiceBus.LightInjectObjectBuilder.Build(Type typeToBuild)
+   at NServiceBus.CommonObjectBuilder.Build(Type typeToBuild)
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage)
+   at CurrentSessionBehavior.Invoke(IIncomingLogicalMessageContext context, Func`1 next) in /_/src/SqlPersistence/SynchronizedStorage/CurrentSessionBehavior.cs:line 18
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next)
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.Process(BasicDeliverEventArgs message)
+Exception details:
+	Message ID: 53046c4d-b221-47c9-b614-abf30070bb2f
+2020-07-09 09:50:31.114 INFO  Immediate Retry is going to retry message '53046c4d-b221-47c9-b614-abf30070bb2f' because of an exception:
+System.InvalidOperationException: Unable to resolve type: Tracking.Messaging.TrackingHandler, service name: 
+ ---> System.InvalidOperationException: Unresolved dependency [Target Type: Tracking.Messaging.TrackingHandler], [Parameter: trackingService(Tracking.Services.ITrackingService)], [Requested dependency: ServiceType:Tracking.Services.ITrackingService, ServiceName:]
+   at LightInject.ServiceContainer.GetEmitMethodForDependency(Dependency dependency)
+   at LightInject.ServiceContainer.EmitConstructorDependency(IEmitter emitter, Dependency dependency)
+   at LightInject.ServiceContainer.EmitConstructorDependencies(ConstructionInfo constructionInfo, IEmitter emitter, Action`1 decoratorTargetEmitter)
+   at LightInject.ServiceContainer.EmitNewInstanceUsingImplementingType(IEmitter emitter, ConstructionInfo constructionInfo, Action`1 decoratorTargetEmitMethod)
+   at LightInject.ServiceContainer.EmitNewInstance(ServiceRegistration serviceRegistration, IEmitter emitter)
+   at LightInject.ServiceContainer.<>c__DisplayClass184_0.<ResolveEmitMethod>b__2(IEmitter ms)
+   at LightInject.ServiceContainer.CreateDynamicMethodDelegate(Action`1 serviceEmitter)
+   at LightInject.ServiceContainer.CreateInstanceDelegateIndex(Action`1 emitMethod)
+   at LightInject.ServiceContainer.EmitLifetime(ServiceRegistration serviceRegistration, Action`1 emitMethod, IEmitter emitter)
+   at LightInject.ServiceContainer.<>c__DisplayClass184_0.<ResolveEmitMethod>b__1(IEmitter methodSkeleton)
+   at LightInject.ServiceContainer.<>c__DisplayClass139_0.<CreateEmitMethodWrapper>b__0(IEmitter ms)
+   at LightInject.ServiceContainer.CreateDynamicMethodDelegate(Action`1 serviceEmitter)
+   at LightInject.ServiceContainer.CreateDelegate(Type serviceType, String serviceName, Boolean throwError)
+   --- End of inner exception stack trace ---
+   at LightInject.ServiceContainer.CreateDelegate(Type serviceType, String serviceName, Boolean throwError)
+   at LightInject.ServiceContainer.CreateDefaultDelegate(Type serviceType, Boolean throwError)
+   at LightInject.ServiceContainer.GetInstance(Type serviceType)
+   at LightInject.Scope.<>c__DisplayClass22_0.<GetInstance>b__0()
+   at LightInject.Scope.WithThisScope[T](Func`1 function)
+   at LightInject.Scope.GetInstance(Type serviceType)
+   at NServiceBus.LightInjectObjectBuilder.Build(Type typeToBuild)
+   at NServiceBus.CommonObjectBuilder.Build(Type typeToBuild)
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage)
+   at CurrentSessionBehavior.Invoke(IIncomingLogicalMessageContext context, Func`1 next) in /_/src/SqlPersistence/SynchronizedStorage/CurrentSessionBehavior.cs:line 18
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next)
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.Process(BasicDeliverEventArgs message)
+Exception details:
+	Message ID: 53046c4d-b221-47c9-b614-abf30070bb2f
+2020-07-09 09:50:31.159 INFO  Immediate Retry is going to retry message '53046c4d-b221-47c9-b614-abf30070bb2f' because of an exception:
+System.InvalidOperationException: Unable to resolve type: Tracking.Messaging.TrackingHandler, service name: 
+ ---> System.InvalidOperationException: Unresolved dependency [Target Type: Tracking.Messaging.TrackingHandler], [Parameter: trackingService(Tracking.Services.ITrackingService)], [Requested dependency: ServiceType:Tracking.Services.ITrackingService, ServiceName:]
+   at LightInject.ServiceContainer.GetEmitMethodForDependency(Dependency dependency)
+   at LightInject.ServiceContainer.EmitConstructorDependency(IEmitter emitter, Dependency dependency)
+   at LightInject.ServiceContainer.EmitConstructorDependencies(ConstructionInfo constructionInfo, IEmitter emitter, Action`1 decoratorTargetEmitter)
+   at LightInject.ServiceContainer.EmitNewInstanceUsingImplementingType(IEmitter emitter, ConstructionInfo constructionInfo, Action`1 decoratorTargetEmitMethod)
+   at LightInject.ServiceContainer.EmitNewInstance(ServiceRegistration serviceRegistration, IEmitter emitter)
+   at LightInject.ServiceContainer.<>c__DisplayClass184_0.<ResolveEmitMethod>b__2(IEmitter ms)
+   at LightInject.ServiceContainer.CreateDynamicMethodDelegate(Action`1 serviceEmitter)
+   at LightInject.ServiceContainer.CreateInstanceDelegateIndex(Action`1 emitMethod)
+   at LightInject.ServiceContainer.EmitLifetime(ServiceRegistration serviceRegistration, Action`1 emitMethod, IEmitter emitter)
+   at LightInject.ServiceContainer.<>c__DisplayClass184_0.<ResolveEmitMethod>b__1(IEmitter methodSkeleton)
+   at LightInject.ServiceContainer.<>c__DisplayClass139_0.<CreateEmitMethodWrapper>b__0(IEmitter ms)
+   at LightInject.ServiceContainer.CreateDynamicMethodDelegate(Action`1 serviceEmitter)
+   at LightInject.ServiceContainer.CreateDelegate(Type serviceType, String serviceName, Boolean throwError)
+   --- End of inner exception stack trace ---
+   at LightInject.ServiceContainer.CreateDelegate(Type serviceType, String serviceName, Boolean throwError)
+   at LightInject.ServiceContainer.CreateDefaultDelegate(Type serviceType, Boolean throwError)
+   at LightInject.ServiceContainer.GetInstance(Type serviceType)
+   at LightInject.Scope.<>c__DisplayClass22_0.<GetInstance>b__0()
+   at LightInject.Scope.WithThisScope[T](Func`1 function)
+   at LightInject.Scope.GetInstance(Type serviceType)
+   at NServiceBus.LightInjectObjectBuilder.Build(Type typeToBuild)
+   at NServiceBus.CommonObjectBuilder.Build(Type typeToBuild)
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage)
+   at CurrentSessionBehavior.Invoke(IIncomingLogicalMessageContext context, Func`1 next) in /_/src/SqlPersistence/SynchronizedStorage/CurrentSessionBehavior.cs:line 18
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next)
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.Process(BasicDeliverEventArgs message)
+Exception details:
+	Message ID: 53046c4d-b221-47c9-b614-abf30070bb2f
+2020-07-09 09:50:31.219 WARN  Delayed Retry will reschedule message '53046c4d-b221-47c9-b614-abf30070bb2f' after a delay of 00:00:03 because of an exception:
+System.InvalidOperationException: Unable to resolve type: Tracking.Messaging.TrackingHandler, service name: 
+ ---> System.InvalidOperationException: Unresolved dependency [Target Type: Tracking.Messaging.TrackingHandler], [Parameter: trackingService(Tracking.Services.ITrackingService)], [Requested dependency: ServiceType:Tracking.Services.ITrackingService, ServiceName:]
+   at LightInject.ServiceContainer.GetEmitMethodForDependency(Dependency dependency)
+   at LightInject.ServiceContainer.EmitConstructorDependency(IEmitter emitter, Dependency dependency)
+   at LightInject.ServiceContainer.EmitConstructorDependencies(ConstructionInfo constructionInfo, IEmitter emitter, Action`1 decoratorTargetEmitter)
+   at LightInject.ServiceContainer.EmitNewInstanceUsingImplementingType(IEmitter emitter, ConstructionInfo constructionInfo, Action`1 decoratorTargetEmitMethod)
+   at LightInject.ServiceContainer.EmitNewInstance(ServiceRegistration serviceRegistration, IEmitter emitter)
+   at LightInject.ServiceContainer.<>c__DisplayClass184_0.<ResolveEmitMethod>b__2(IEmitter ms)
+   at LightInject.ServiceContainer.CreateDynamicMethodDelegate(Action`1 serviceEmitter)
+   at LightInject.ServiceContainer.CreateInstanceDelegateIndex(Action`1 emitMethod)
+   at LightInject.ServiceContainer.EmitLifetime(ServiceRegistration serviceRegistration, Action`1 emitMethod, IEmitter emitter)
+   at LightInject.ServiceContainer.<>c__DisplayClass184_0.<ResolveEmitMethod>b__1(IEmitter methodSkeleton)
+   at LightInject.ServiceContainer.<>c__DisplayClass139_0.<CreateEmitMethodWrapper>b__0(IEmitter ms)
+   at LightInject.ServiceContainer.CreateDynamicMethodDelegate(Action`1 serviceEmitter)
+   at LightInject.ServiceContainer.CreateDelegate(Type serviceType, String serviceName, Boolean throwError)
+   --- End of inner exception stack trace ---
+   at LightInject.ServiceContainer.CreateDelegate(Type serviceType, String serviceName, Boolean throwError)
+   at LightInject.ServiceContainer.CreateDefaultDelegate(Type serviceType, Boolean throwError)
+   at LightInject.ServiceContainer.GetInstance(Type serviceType)
+   at LightInject.Scope.<>c__DisplayClass22_0.<GetInstance>b__0()
+   at LightInject.Scope.WithThisScope[T](Func`1 function)
+   at LightInject.Scope.GetInstance(Type serviceType)
+   at NServiceBus.LightInjectObjectBuilder.Build(Type typeToBuild)
+   at NServiceBus.CommonObjectBuilder.Build(Type typeToBuild)
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage)
+   at CurrentSessionBehavior.Invoke(IIncomingLogicalMessageContext context, Func`1 next) in /_/src/SqlPersistence/SynchronizedStorage/CurrentSessionBehavior.cs:line 18
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next)
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.Process(BasicDeliverEventArgs message)
+Exception details:
+	Message ID: 53046c4d-b221-47c9-b614-abf30070bb2f
+2020-07-09 09:50:34.357 INFO  Immediate Retry is going to retry message '53046c4d-b221-47c9-b614-abf30070bb2f' because of an exception:
+System.InvalidOperationException: Unable to resolve type: Tracking.Messaging.TrackingHandler, service name: 
+ ---> System.InvalidOperationException: Unresolved dependency [Target Type: Tracking.Messaging.TrackingHandler], [Parameter: trackingService(Tracking.Services.ITrackingService)], [Requested dependency: ServiceType:Tracking.Services.ITrackingService, ServiceName:]
+   at LightInject.ServiceContainer.GetEmitMethodForDependency(Dependency dependency)
+   at LightInject.ServiceContainer.EmitConstructorDependency(IEmitter emitter, Dependency dependency)
+   at LightInject.ServiceContainer.EmitConstructorDependencies(ConstructionInfo constructionInfo, IEmitter emitter, Action`1 decoratorTargetEmitter)
+   at LightInject.ServiceContainer.EmitNewInstanceUsingImplementingType(IEmitter emitter, ConstructionInfo constructionInfo, Action`1 decoratorTargetEmitMethod)
+   at LightInject.ServiceContainer.EmitNewInstance(ServiceRegistration serviceRegistration, IEmitter emitter)
+   at LightInject.ServiceContainer.<>c__DisplayClass184_0.<ResolveEmitMethod>b__2(IEmitter ms)
+   at LightInject.ServiceContainer.CreateDynamicMethodDelegate(Action`1 serviceEmitter)
+   at LightInject.ServiceContainer.CreateInstanceDelegateIndex(Action`1 emitMethod)
+   at LightInject.ServiceContainer.EmitLifetime(ServiceRegistration serviceRegistration, Action`1 emitMethod, IEmitter emitter)
+   at LightInject.ServiceContainer.<>c__DisplayClass184_0.<ResolveEmitMethod>b__1(IEmitter methodSkeleton)
+   at LightInject.ServiceContainer.<>c__DisplayClass139_0.<CreateEmitMethodWrapper>b__0(IEmitter ms)
+   at LightInject.ServiceContainer.CreateDynamicMethodDelegate(Action`1 serviceEmitter)
+   at LightInject.ServiceContainer.CreateDelegate(Type serviceType, String serviceName, Boolean throwError)
+   --- End of inner exception stack trace ---
+   at LightInject.ServiceContainer.CreateDelegate(Type serviceType, String serviceName, Boolean throwError)
+   at LightInject.ServiceContainer.CreateDefaultDelegate(Type serviceType, Boolean throwError)
+   at LightInject.ServiceContainer.GetInstance(Type serviceType)
+   at LightInject.Scope.<>c__DisplayClass22_0.<GetInstance>b__0()
+   at LightInject.Scope.WithThisScope[T](Func`1 function)
+   at LightInject.Scope.GetInstance(Type serviceType)
+   at NServiceBus.LightInjectObjectBuilder.Build(Type typeToBuild)
+   at NServiceBus.CommonObjectBuilder.Build(Type typeToBuild)
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage)
+   at CurrentSessionBehavior.Invoke(IIncomingLogicalMessageContext context, Func`1 next) in /_/src/SqlPersistence/SynchronizedStorage/CurrentSessionBehavior.cs:line 18
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next)
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.Process(BasicDeliverEventArgs message)
+Exception details:
+	Message ID: 53046c4d-b221-47c9-b614-abf30070bb2f
+2020-07-09 09:50:34.486 INFO  Immediate Retry is going to retry message '53046c4d-b221-47c9-b614-abf30070bb2f' because of an exception:
+System.InvalidOperationException: Unable to resolve type: Tracking.Messaging.TrackingHandler, service name: 
+ ---> System.InvalidOperationException: Unresolved dependency [Target Type: Tracking.Messaging.TrackingHandler], [Parameter: trackingService(Tracking.Services.ITrackingService)], [Requested dependency: ServiceType:Tracking.Services.ITrackingService, ServiceName:]
+   at LightInject.ServiceContainer.GetEmitMethodForDependency(Dependency dependency)
+   at LightInject.ServiceContainer.EmitConstructorDependency(IEmitter emitter, Dependency dependency)
+   at LightInject.ServiceContainer.EmitConstructorDependencies(ConstructionInfo constructionInfo, IEmitter emitter, Action`1 decoratorTargetEmitter)
+   at LightInject.ServiceContainer.EmitNewInstanceUsingImplementingType(IEmitter emitter, ConstructionInfo constructionInfo, Action`1 decoratorTargetEmitMethod)
+   at LightInject.ServiceContainer.EmitNewInstance(ServiceRegistration serviceRegistration, IEmitter emitter)
+   at LightInject.ServiceContainer.<>c__DisplayClass184_0.<ResolveEmitMethod>b__2(IEmitter ms)
+   at LightInject.ServiceContainer.CreateDynamicMethodDelegate(Action`1 serviceEmitter)
+   at LightInject.ServiceContainer.CreateInstanceDelegateIndex(Action`1 emitMethod)
+   at LightInject.ServiceContainer.EmitLifetime(ServiceRegistration serviceRegistration, Action`1 emitMethod, IEmitter emitter)
+   at LightInject.ServiceContainer.<>c__DisplayClass184_0.<ResolveEmitMethod>b__1(IEmitter methodSkeleton)
+   at LightInject.ServiceContainer.<>c__DisplayClass139_0.<CreateEmitMethodWrapper>b__0(IEmitter ms)
+   at LightInject.ServiceContainer.CreateDynamicMethodDelegate(Action`1 serviceEmitter)
+   at LightInject.ServiceContainer.CreateDelegate(Type serviceType, String serviceName, Boolean throwError)
+   --- End of inner exception stack trace ---
+   at LightInject.ServiceContainer.CreateDelegate(Type serviceType, String serviceName, Boolean throwError)
+   at LightInject.ServiceContainer.CreateDefaultDelegate(Type serviceType, Boolean throwError)
+   at LightInject.ServiceContainer.GetInstance(Type serviceType)
+   at LightInject.Scope.<>c__DisplayClass22_0.<GetInstance>b__0()
+   at LightInject.Scope.WithThisScope[T](Func`1 function)
+   at LightInject.Scope.GetInstance(Type serviceType)
+   at NServiceBus.LightInjectObjectBuilder.Build(Type typeToBuild)
+   at NServiceBus.CommonObjectBuilder.Build(Type typeToBuild)
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage)
+   at CurrentSessionBehavior.Invoke(IIncomingLogicalMessageContext context, Func`1 next) in /_/src/SqlPersistence/SynchronizedStorage/CurrentSessionBehavior.cs:line 18
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next)
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.Process(BasicDeliverEventArgs message)
+Exception details:
+	Message ID: 53046c4d-b221-47c9-b614-abf30070bb2f
+2020-07-09 09:50:34.598 INFO  Immediate Retry is going to retry message '53046c4d-b221-47c9-b614-abf30070bb2f' because of an exception:
+System.InvalidOperationException: Unable to resolve type: Tracking.Messaging.TrackingHandler, service name: 
+ ---> System.InvalidOperationException: Unresolved dependency [Target Type: Tracking.Messaging.TrackingHandler], [Parameter: trackingService(Tracking.Services.ITrackingService)], [Requested dependency: ServiceType:Tracking.Services.ITrackingService, ServiceName:]
+   at LightInject.ServiceContainer.GetEmitMethodForDependency(Dependency dependency)
+   at LightInject.ServiceContainer.EmitConstructorDependency(IEmitter emitter, Dependency dependency)
+   at LightInject.ServiceContainer.EmitConstructorDependencies(ConstructionInfo constructionInfo, IEmitter emitter, Action`1 decoratorTargetEmitter)
+   at LightInject.ServiceContainer.EmitNewInstanceUsingImplementingType(IEmitter emitter, ConstructionInfo constructionInfo, Action`1 decoratorTargetEmitMethod)
+   at LightInject.ServiceContainer.EmitNewInstance(ServiceRegistration serviceRegistration, IEmitter emitter)
+   at LightInject.ServiceContainer.<>c__DisplayClass184_0.<ResolveEmitMethod>b__2(IEmitter ms)
+   at LightInject.ServiceContainer.CreateDynamicMethodDelegate(Action`1 serviceEmitter)
+   at LightInject.ServiceContainer.CreateInstanceDelegateIndex(Action`1 emitMethod)
+   at LightInject.ServiceContainer.EmitLifetime(ServiceRegistration serviceRegistration, Action`1 emitMethod, IEmitter emitter)
+   at LightInject.ServiceContainer.<>c__DisplayClass184_0.<ResolveEmitMethod>b__1(IEmitter methodSkeleton)
+   at LightInject.ServiceContainer.<>c__DisplayClass139_0.<CreateEmitMethodWrapper>b__0(IEmitter ms)
+   at LightInject.ServiceContainer.CreateDynamicMethodDelegate(Action`1 serviceEmitter)
+   at LightInject.ServiceContainer.CreateDelegate(Type serviceType, String serviceName, Boolean throwError)
+   --- End of inner exception stack trace ---
+   at LightInject.ServiceContainer.CreateDelegate(Type serviceType, String serviceName, Boolean throwError)
+   at LightInject.ServiceContainer.CreateDefaultDelegate(Type serviceType, Boolean throwError)
+   at LightInject.ServiceContainer.GetInstance(Type serviceType)
+   at LightInject.Scope.<>c__DisplayClass22_0.<GetInstance>b__0()
+   at LightInject.Scope.WithThisScope[T](Func`1 function)
+   at LightInject.Scope.GetInstance(Type serviceType)
+   at NServiceBus.LightInjectObjectBuilder.Build(Type typeToBuild)
+   at NServiceBus.CommonObjectBuilder.Build(Type typeToBuild)
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage)
+   at CurrentSessionBehavior.Invoke(IIncomingLogicalMessageContext context, Func`1 next) in /_/src/SqlPersistence/SynchronizedStorage/CurrentSessionBehavior.cs:line 18
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next)
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.Process(BasicDeliverEventArgs message)
+Exception details:
+	Message ID: 53046c4d-b221-47c9-b614-abf30070bb2f
+2020-07-09 09:50:34.652 INFO  Immediate Retry is going to retry message '53046c4d-b221-47c9-b614-abf30070bb2f' because of an exception:
+System.InvalidOperationException: Unable to resolve type: Tracking.Messaging.TrackingHandler, service name: 
+ ---> System.InvalidOperationException: Unresolved dependency [Target Type: Tracking.Messaging.TrackingHandler], [Parameter: trackingService(Tracking.Services.ITrackingService)], [Requested dependency: ServiceType:Tracking.Services.ITrackingService, ServiceName:]
+   at LightInject.ServiceContainer.GetEmitMethodForDependency(Dependency dependency)
+   at LightInject.ServiceContainer.EmitConstructorDependency(IEmitter emitter, Dependency dependency)
+   at LightInject.ServiceContainer.EmitConstructorDependencies(ConstructionInfo constructionInfo, IEmitter emitter, Action`1 decoratorTargetEmitter)
+   at LightInject.ServiceContainer.EmitNewInstanceUsingImplementingType(IEmitter emitter, ConstructionInfo constructionInfo, Action`1 decoratorTargetEmitMethod)
+   at LightInject.ServiceContainer.EmitNewInstance(ServiceRegistration serviceRegistration, IEmitter emitter)
+   at LightInject.ServiceContainer.<>c__DisplayClass184_0.<ResolveEmitMethod>b__2(IEmitter ms)
+   at LightInject.ServiceContainer.CreateDynamicMethodDelegate(Action`1 serviceEmitter)
+   at LightInject.ServiceContainer.CreateInstanceDelegateIndex(Action`1 emitMethod)
+   at LightInject.ServiceContainer.EmitLifetime(ServiceRegistration serviceRegistration, Action`1 emitMethod, IEmitter emitter)
+   at LightInject.ServiceContainer.<>c__DisplayClass184_0.<ResolveEmitMethod>b__1(IEmitter methodSkeleton)
+   at LightInject.ServiceContainer.<>c__DisplayClass139_0.<CreateEmitMethodWrapper>b__0(IEmitter ms)
+   at LightInject.ServiceContainer.CreateDynamicMethodDelegate(Action`1 serviceEmitter)
+   at LightInject.ServiceContainer.CreateDelegate(Type serviceType, String serviceName, Boolean throwError)
+   --- End of inner exception stack trace ---
+   at LightInject.ServiceContainer.CreateDelegate(Type serviceType, String serviceName, Boolean throwError)
+   at LightInject.ServiceContainer.CreateDefaultDelegate(Type serviceType, Boolean throwError)
+   at LightInject.ServiceContainer.GetInstance(Type serviceType)
+   at LightInject.Scope.<>c__DisplayClass22_0.<GetInstance>b__0()
+   at LightInject.Scope.WithThisScope[T](Func`1 function)
+   at LightInject.Scope.GetInstance(Type serviceType)
+   at NServiceBus.LightInjectObjectBuilder.Build(Type typeToBuild)
+   at NServiceBus.CommonObjectBuilder.Build(Type typeToBuild)
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage)
+   at CurrentSessionBehavior.Invoke(IIncomingLogicalMessageContext context, Func`1 next) in /_/src/SqlPersistence/SynchronizedStorage/CurrentSessionBehavior.cs:line 18
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next)
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.Process(BasicDeliverEventArgs message)
+Exception details:
+	Message ID: 53046c4d-b221-47c9-b614-abf30070bb2f
+2020-07-09 09:50:34.696 INFO  Immediate Retry is going to retry message '53046c4d-b221-47c9-b614-abf30070bb2f' because of an exception:
+System.InvalidOperationException: Unable to resolve type: Tracking.Messaging.TrackingHandler, service name: 
+ ---> System.InvalidOperationException: Unresolved dependency [Target Type: Tracking.Messaging.TrackingHandler], [Parameter: trackingService(Tracking.Services.ITrackingService)], [Requested dependency: ServiceType:Tracking.Services.ITrackingService, ServiceName:]
+   at LightInject.ServiceContainer.GetEmitMethodForDependency(Dependency dependency)
+   at LightInject.ServiceContainer.EmitConstructorDependency(IEmitter emitter, Dependency dependency)
+   at LightInject.ServiceContainer.EmitConstructorDependencies(ConstructionInfo constructionInfo, IEmitter emitter, Action`1 decoratorTargetEmitter)
+   at LightInject.ServiceContainer.EmitNewInstanceUsingImplementingType(IEmitter emitter, ConstructionInfo constructionInfo, Action`1 decoratorTargetEmitMethod)
+   at LightInject.ServiceContainer.EmitNewInstance(ServiceRegistration serviceRegistration, IEmitter emitter)
+   at LightInject.ServiceContainer.<>c__DisplayClass184_0.<ResolveEmitMethod>b__2(IEmitter ms)
+   at LightInject.ServiceContainer.CreateDynamicMethodDelegate(Action`1 serviceEmitter)
+   at LightInject.ServiceContainer.CreateInstanceDelegateIndex(Action`1 emitMethod)
+   at LightInject.ServiceContainer.EmitLifetime(ServiceRegistration serviceRegistration, Action`1 emitMethod, IEmitter emitter)
+   at LightInject.ServiceContainer.<>c__DisplayClass184_0.<ResolveEmitMethod>b__1(IEmitter methodSkeleton)
+   at LightInject.ServiceContainer.<>c__DisplayClass139_0.<CreateEmitMethodWrapper>b__0(IEmitter ms)
+   at LightInject.ServiceContainer.CreateDynamicMethodDelegate(Action`1 serviceEmitter)
+   at LightInject.ServiceContainer.CreateDelegate(Type serviceType, String serviceName, Boolean throwError)
+   --- End of inner exception stack trace ---
+   at LightInject.ServiceContainer.CreateDelegate(Type serviceType, String serviceName, Boolean throwError)
+   at LightInject.ServiceContainer.CreateDefaultDelegate(Type serviceType, Boolean throwError)
+   at LightInject.ServiceContainer.GetInstance(Type serviceType)
+   at LightInject.Scope.<>c__DisplayClass22_0.<GetInstance>b__0()
+   at LightInject.Scope.WithThisScope[T](Func`1 function)
+   at LightInject.Scope.GetInstance(Type serviceType)
+   at NServiceBus.LightInjectObjectBuilder.Build(Type typeToBuild)
+   at NServiceBus.CommonObjectBuilder.Build(Type typeToBuild)
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage)
+   at CurrentSessionBehavior.Invoke(IIncomingLogicalMessageContext context, Func`1 next) in /_/src/SqlPersistence/SynchronizedStorage/CurrentSessionBehavior.cs:line 18
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next)
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.Process(BasicDeliverEventArgs message)
+Exception details:
+	Message ID: 53046c4d-b221-47c9-b614-abf30070bb2f
+2020-07-09 09:50:34.746 ERROR Moving message '53046c4d-b221-47c9-b614-abf30070bb2f' to the error queue 'error' because processing failed due to an exception:
+System.InvalidOperationException: Unable to resolve type: Tracking.Messaging.TrackingHandler, service name: 
+ ---> System.InvalidOperationException: Unresolved dependency [Target Type: Tracking.Messaging.TrackingHandler], [Parameter: trackingService(Tracking.Services.ITrackingService)], [Requested dependency: ServiceType:Tracking.Services.ITrackingService, ServiceName:]
+   at LightInject.ServiceContainer.GetEmitMethodForDependency(Dependency dependency)
+   at LightInject.ServiceContainer.EmitConstructorDependency(IEmitter emitter, Dependency dependency)
+   at LightInject.ServiceContainer.EmitConstructorDependencies(ConstructionInfo constructionInfo, IEmitter emitter, Action`1 decoratorTargetEmitter)
+   at LightInject.ServiceContainer.EmitNewInstanceUsingImplementingType(IEmitter emitter, ConstructionInfo constructionInfo, Action`1 decoratorTargetEmitMethod)
+   at LightInject.ServiceContainer.EmitNewInstance(ServiceRegistration serviceRegistration, IEmitter emitter)
+   at LightInject.ServiceContainer.<>c__DisplayClass184_0.<ResolveEmitMethod>b__2(IEmitter ms)
+   at LightInject.ServiceContainer.CreateDynamicMethodDelegate(Action`1 serviceEmitter)
+   at LightInject.ServiceContainer.CreateInstanceDelegateIndex(Action`1 emitMethod)
+   at LightInject.ServiceContainer.EmitLifetime(ServiceRegistration serviceRegistration, Action`1 emitMethod, IEmitter emitter)
+   at LightInject.ServiceContainer.<>c__DisplayClass184_0.<ResolveEmitMethod>b__1(IEmitter methodSkeleton)
+   at LightInject.ServiceContainer.<>c__DisplayClass139_0.<CreateEmitMethodWrapper>b__0(IEmitter ms)
+   at LightInject.ServiceContainer.CreateDynamicMethodDelegate(Action`1 serviceEmitter)
+   at LightInject.ServiceContainer.CreateDelegate(Type serviceType, String serviceName, Boolean throwError)
+   --- End of inner exception stack trace ---
+   at LightInject.ServiceContainer.CreateDelegate(Type serviceType, String serviceName, Boolean throwError)
+   at LightInject.ServiceContainer.CreateDefaultDelegate(Type serviceType, Boolean throwError)
+   at LightInject.ServiceContainer.GetInstance(Type serviceType)
+   at LightInject.Scope.<>c__DisplayClass22_0.<GetInstance>b__0()
+   at LightInject.Scope.WithThisScope[T](Func`1 function)
+   at LightInject.Scope.GetInstance(Type serviceType)
+   at NServiceBus.LightInjectObjectBuilder.Build(Type typeToBuild)
+   at NServiceBus.CommonObjectBuilder.Build(Type typeToBuild)
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage)
+   at CurrentSessionBehavior.Invoke(IIncomingLogicalMessageContext context, Func`1 next) in /_/src/SqlPersistence/SynchronizedStorage/CurrentSessionBehavior.cs:line 18
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next)
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.Process(BasicDeliverEventArgs message)
+Exception details:
+	Message ID: 53046c4d-b221-47c9-b614-abf30070bb2f
+2020-07-09 10:18:46.263 INFO  Logging to 'C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Tracking.Messaging\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-09 10:18:47.487 INFO  Selected active license from C:\Users\rina lerner\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-05
+2020-07-09 10:18:48.744 INFO  Executing 'C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Tracking.Messaging\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-09 10:19:35.539 INFO  message #0 received
+2020-07-09 10:22:37.642 INFO  Logging to 'C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Tracking.Messaging\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-09 10:22:38.859 INFO  Selected active license from C:\Users\rina lerner\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-05
+2020-07-09 10:22:40.138 INFO  Executing 'C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Tracking.Messaging\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-09 10:22:45.920 INFO  message #0 received
+2020-07-09 10:23:13.783 INFO  Immediate Retry is going to retry message 'e23cf620-107c-46cb-a5e2-abf30078b303' because of an exception:
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> Tracking
+System.Object -> Tracking.Data.Tracking
+   at lambda_method(Closure , Object , Tracking , ResolutionContext )
+   at Tracking.Data.TrackingRepository.UpdateTable(TrackingModel trackingModel) in C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Tracking.Data\Classes\TrackingRepository.cs:line 36
+   at Tracking.Services.TrackingService.UpdateTable(TrackingModel trackingModel) in C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Tracking.Services\Classes\TrackingService.cs:line 22
+   at Tracking.Messaging.TrackingHandler.Handle(AddTracking message, IMessageHandlerContext context) in C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Tracking.Messaging\TrackingHandler.cs:line 25
+   at NServiceBus.Pipeline.MessageHandler.Invoke(Object message, IMessageHandlerContext handlerContext)
+   at NServiceBus.InvokeHandlerTerminator.Terminate(IInvokeHandlerContext context)
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage)
+   at CurrentSessionBehavior.Invoke(IIncomingLogicalMessageContext context, Func`1 next) in /_/src/SqlPersistence/SynchronizedStorage/CurrentSessionBehavior.cs:line 18
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next)
+   at NServiceBus.MutateIncomingMessageBehavior.InvokeIncomingMessageMutators(IIncomingLogicalMessageContext context, Func`2 next)
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.UnitOfWorkBehavior.InvokeUnitsOfWork(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.UnitOfWorkBehavior.InvokeUnitsOfWork(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.MutateIncomingTransportMessageBehavior.InvokeIncomingTransportMessagesMutators(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.Process(BasicDeliverEventArgs message)
+Exception details:
+	Message type: Messages.AddTracking
+	Handler type: Tracking.Messaging.TrackingHandler
+	Handler start time: 2020-07-09 07:22:41:472108 Z
+	Handler failure time: 2020-07-09 07:23:13:733715 Z
+	Message ID: e23cf620-107c-46cb-a5e2-abf30078b303
+2020-07-09 10:23:20.432 INFO  message #0 received
+2020-07-09 10:25:01.111 INFO  Logging to 'C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Tracking.Messaging\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-09 10:25:02.225 INFO  Selected active license from C:\Users\rina lerner\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-05
+2020-07-09 10:25:03.846 INFO  Executing 'C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Tracking.Messaging\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-09 10:25:08.699 INFO  message #0 received
+2020-07-09 10:34:12.385 INFO  Logging to 'C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Tracking.Messaging\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-09 10:34:13.747 INFO  Selected active license from C:\Users\rina lerner\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-05
+2020-07-09 10:34:15.548 INFO  Executing 'C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Tracking.Messaging\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-09 10:34:20.307 INFO  message #0 received
+2020-07-09 10:34:40.052 INFO  Immediate Retry is going to retry message 'e23cf620-107c-46cb-a5e2-abf30078b303' because of an exception:
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> Tracking
+System.Object -> Tracking.Data.Tracking
+   at lambda_method(Closure , Object , Tracking , ResolutionContext )
+   at Tracking.Data.TrackingRepository.UpdateTable(TrackingModel trackingModel) in C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Tracking.Data\Classes\TrackingRepository.cs:line 36
+   at Tracking.Services.TrackingService.UpdateTable(TrackingModel trackingModel) in C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Tracking.Services\Classes\TrackingService.cs:line 22
+   at Tracking.Messaging.TrackingHandler.Handle(AddTracking message, IMessageHandlerContext context) in C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Tracking.Messaging\TrackingHandler.cs:line 25
+   at NServiceBus.Pipeline.MessageHandler.Invoke(Object message, IMessageHandlerContext handlerContext)
+   at NServiceBus.InvokeHandlerTerminator.Terminate(IInvokeHandlerContext context)
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage)
+   at CurrentSessionBehavior.Invoke(IIncomingLogicalMessageContext context, Func`1 next) in /_/src/SqlPersistence/SynchronizedStorage/CurrentSessionBehavior.cs:line 18
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next)
+   at NServiceBus.MutateIncomingMessageBehavior.InvokeIncomingMessageMutators(IIncomingLogicalMessageContext context, Func`2 next)
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.UnitOfWorkBehavior.InvokeUnitsOfWork(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.UnitOfWorkBehavior.InvokeUnitsOfWork(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.MutateIncomingTransportMessageBehavior.InvokeIncomingTransportMessagesMutators(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.Process(BasicDeliverEventArgs message)
+Exception details:
+	Message type: Messages.AddTracking
+	Handler type: Tracking.Messaging.TrackingHandler
+	Handler start time: 2020-07-09 07:34:17:027507 Z
+	Handler failure time: 2020-07-09 07:34:40:019432 Z
+	Message ID: e23cf620-107c-46cb-a5e2-abf30078b303
+2020-07-09 10:34:41.800 INFO  message #0 received
+2020-07-09 10:34:53.774 INFO  Immediate Retry is going to retry message 'e23cf620-107c-46cb-a5e2-abf30078b303' because of an exception:
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> Tracking
+System.Object -> Tracking.Data.Tracking
+   at lambda_method(Closure , Object , Tracking , ResolutionContext )
+   at Tracking.Data.TrackingRepository.UpdateTable(TrackingModel trackingModel) in C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Tracking.Data\Classes\TrackingRepository.cs:line 36
+   at Tracking.Services.TrackingService.UpdateTable(TrackingModel trackingModel) in C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Tracking.Services\Classes\TrackingService.cs:line 22
+   at Tracking.Messaging.TrackingHandler.Handle(AddTracking message, IMessageHandlerContext context) in C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Tracking.Messaging\TrackingHandler.cs:line 25
+   at NServiceBus.Pipeline.MessageHandler.Invoke(Object message, IMessageHandlerContext handlerContext)
+   at NServiceBus.InvokeHandlerTerminator.Terminate(IInvokeHandlerContext context)
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage)
+   at CurrentSessionBehavior.Invoke(IIncomingLogicalMessageContext context, Func`1 next) in /_/src/SqlPersistence/SynchronizedStorage/CurrentSessionBehavior.cs:line 18
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next)
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage)
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next)
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next)
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.Process(BasicDeliverEventArgs message)
+Exception details:
+	Message type: Messages.AddTracking
+	Handler type: Tracking.Messaging.TrackingHandler
+	Handler start time: 2020-07-09 07:34:40:151077 Z
+	Handler failure time: 2020-07-09 07:34:53:755756 Z
+	Message ID: e23cf620-107c-46cb-a5e2-abf30078b303
+2020-07-09 10:35:00.585 INFO  message #0 received
+2020-07-09 10:37:47.974 INFO  Logging to 'C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Tracking.Messaging\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-09 10:37:49.045 INFO  Selected active license from C:\Users\rina lerner\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-05
+2020-07-09 10:37:51.325 INFO  Executing 'C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Tracking.Messaging\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-09 10:38:33.780 INFO  Logging to 'C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Tracking.Messaging\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-09 10:38:34.692 INFO  Selected active license from C:\Users\rina lerner\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-05
+2020-07-09 10:38:36.274 INFO  Executing 'C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Tracking.Messaging\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-09 10:43:37.861 INFO  Logging to 'C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Tracking.Messaging\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-09 10:43:39.493 INFO  Selected active license from C:\Users\rina lerner\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-05
+2020-07-09 10:49:06.322 INFO  Logging to 'C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Tracking.Messaging\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-09 10:49:07.399 INFO  Selected active license from C:\Users\rina lerner\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-05
+2020-07-09 10:49:11.563 INFO  Executing 'C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Tracking.Messaging\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-09 10:51:31.986 INFO  Logging to 'C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Tracking.Messaging\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-09 10:51:33.255 INFO  Selected active license from C:\Users\rina lerner\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-05
+2020-07-09 10:51:37.948 INFO  Executing 'C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Tracking.Messaging\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-09 10:52:05.493 INFO  message #0 received
+2020-07-09 10:53:32.081 INFO  message #0 received
+2020-07-09 10:55:26.535 INFO  message #0 received
+2020-07-09 10:58:36.701 INFO  Logging to 'C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Tracking.Messaging\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-09 10:58:39.504 INFO  Selected active license from C:\Users\rina lerner\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-05
+2020-07-09 10:58:43.838 INFO  Executing 'C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Tracking.Messaging\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-09 11:19:59.083 INFO  Logging to 'C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Tracking.Messaging\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-09 11:24:55.386 INFO  Logging to 'C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Tracking.Messaging\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-09 11:24:55.869 INFO  Selected active license from C:\Users\rina lerner\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-05
+2020-07-09 11:24:56.801 ERROR Could not complete the installation. 
+System.InvalidOperationException: Instance failure.
+   at System.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, Boolean encrypt, Boolean trustServerCert, Boolean integratedSecurity, Boolean withFailover)
+   at System.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at NServiceBus.Persistence.Sql.ScriptRunner.ExecuteInSeparateConnection[T](Func`6 installAction, String scriptDirectory, String tablePrefix, SqlDialect sqlDialect, Func`2 connectionBuilder) in /_/src/SqlPersistence/ScriptRunner.cs:line 70
+   at NServiceBus.Persistence.Sql.ScriptRunner.Install(SqlDialect sqlDialect, String tablePrefix, Func`2 connectionBuilder, String scriptDirectory, Boolean shouldInstallOutbox, Boolean shouldInstallSagas, Boolean shouldInstallSubscriptions, Boolean shouldInstallTimeouts) in /_/src/SqlPersistence/ScriptRunner.cs:line 48
+   at SqlPersistenceInstaller.Install(String identity) in /_/src/SqlPersistence/NeedToInstallSomething.cs:line 30
+2020-07-09 11:27:01.594 INFO  Logging to 'C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Tracking.Messaging\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-09 11:27:02.735 INFO  Selected active license from C:\Users\rina lerner\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-05
+2020-07-09 11:27:04.204 INFO  Executing 'C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Tracking.Messaging\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-09 11:27:26.415 INFO  message #0 received
+2020-07-09 11:39:57.738 INFO  Logging to 'C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Tracking.Messaging\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-09 11:39:58.327 INFO  Selected active license from C:\Users\rina lerner\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-05
+2020-07-09 11:39:59.250 INFO  Executing 'C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Tracking.Messaging\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-09 11:42:43.137 INFO  Logging to 'C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Tracking.Messaging\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-09 11:42:45.741 INFO  Selected active license from C:\Users\rina lerner\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-05
+2020-07-09 11:42:49.658 INFO  Executing 'C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Tracking.Messaging\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-09 11:43:12.968 INFO  message #0 received
+2020-07-09 12:07:19.375 INFO  Logging to 'C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Tracking.Messaging\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-09 12:07:20.130 INFO  Auditing processed messages to 'audit'
+2020-07-09 12:07:20.430 INFO  Selected active license from C:\Users\rina lerner\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-05
+2020-07-09 12:07:21.905 INFO  Executing 'C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Tracking.Messaging\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-09 12:07:42.253 INFO  message #0 received

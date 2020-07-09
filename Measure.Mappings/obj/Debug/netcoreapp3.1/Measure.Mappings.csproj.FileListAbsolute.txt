@@ -1,0 +1,5 @@
+C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Measure.Mappings\bin\Debug\netcoreapp3.1\Measure.Mappings.deps.json
+C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Measure.Mappings\bin\Debug\netcoreapp3.1\Measure.Mappings.dll
+C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Measure.Mappings\obj\Debug\netcoreapp3.1\Measure.Mappings.csprojAssemblyReference.cache
+C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Measure.Mappings\obj\Debug\netcoreapp3.1\Measure.Mappings.AssemblyInfoInputs.cache
+C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Measure.Mappings\obj\Debug\netcoreapp3.1\Measure.Mappings.AssemblyInfo.cs

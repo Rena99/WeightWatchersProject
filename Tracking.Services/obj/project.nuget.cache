@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "usHtoR8B4Nsr83uxmXw27Jvma4Jp8jNfJLMHrov1C7F7nLQkwbHzIc01/smOndQ8I12/KDkuG0u8XsyVQtRgbg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\rina lerner\\Documents\\Brix\\WeightWatchersProject\\Tracking.Services\\Tracking.Services.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\rina lerner\\.nuget\\packages\\automapper\\10.0.0\\automapper.10.0.0.nupkg.sha512",
+    "C:\\Users\\rina lerner\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\rina lerner\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512",
+    "C:\\Users\\rina lerner\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
+  ],
+  "logs": []
+}

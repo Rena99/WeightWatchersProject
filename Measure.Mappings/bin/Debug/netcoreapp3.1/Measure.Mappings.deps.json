@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Measure.Mappings/1.0.0": {
+        "runtime": {
+          "Measure.Mappings.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Measure.Mappings/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
