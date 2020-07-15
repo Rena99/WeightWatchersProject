@@ -13,12 +13,8 @@ namespace Subscriber.Data
 {
     public class SubscriberRepository : ISubscriberRepository
     {
-        public SubscriberRepository()
-        {
-        }
         private readonly WeightWatchers context;
         private readonly IMapper _mapper;
-        private readonly string salt = "E1F53135E559C253";
         public SubscriberRepository(IMapper mapper, WeightWatchers context)
         {
             _mapper = mapper;

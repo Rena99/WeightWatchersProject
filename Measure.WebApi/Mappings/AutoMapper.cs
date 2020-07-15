@@ -4,7 +4,7 @@ using Messages;
 
 namespace Measure.WebApi
 {
-    class AutoMapper:Profile
+    public class AutoMapper:Profile
     {
         public AutoMapper()
         {

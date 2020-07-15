@@ -1022,3 +1022,9 @@ License Expiration: 2020-10-05
 License Expiration: 2020-10-05
 2020-07-09 12:07:21.905 INFO  Executing 'C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Tracking.Messaging\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
 2020-07-09 12:07:42.253 INFO  message #0 received
+2020-07-09 15:33:01.525 INFO  Logging to 'C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Tracking.Messaging\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-09 15:33:02.310 INFO  Auditing processed messages to 'audit'
+2020-07-09 15:33:02.576 INFO  Selected active license from C:\Users\rina lerner\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-05
+2020-07-09 15:33:07.500 INFO  Executing 'C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Tracking.Messaging\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-09 15:33:46.923 INFO  message #0 received

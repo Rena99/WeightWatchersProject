@@ -29,7 +29,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Messages\Messages.csproj" />
-    <ProjectReference Include="..\Middlewares\Middlewares.csproj" />
     <ProjectReference Include="..\Subscriber.Data\Subscriber.Data.csproj" />
     <ProjectReference Include="..\Subscriber.Services\Subscriber.Services.csproj" />
   </ItemGroup>

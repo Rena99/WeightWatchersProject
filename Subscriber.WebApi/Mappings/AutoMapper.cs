@@ -6,7 +6,7 @@ using Subscriber.WebApi.DTO;
 
 namespace Subscriber.WebApi.Mappings
 {
-    class AutoMapper:Profile
+    public class AutoMapper:Profile
     {
         public AutoMapper()
         {

@@ -82,10 +82,9 @@ C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Tracking.WebApi\bin\De
 C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Tracking.WebApi\bin\Debug\netcoreapp3.1\System.Xml.XPath.XmlDocument.dll
 C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Tracking.WebApi\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Tracking.WebApi\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
-C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Tracking.WebApi\bin\Debug\netcoreapp3.1\Middlewares.dll
-C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Tracking.WebApi\bin\Debug\netcoreapp3.1\Middlewares.pdb
 C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Tracking.WebApi\bin\Debug\netcoreapp3.1\Messages.dll
 C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Tracking.WebApi\bin\Debug\netcoreapp3.1\Messages.pdb
+C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Tracking.WebApi\bin\Debug\netcoreapp3.1\Tracking.Data.dll.config
 C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Tracking.WebApi\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql
 C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Tracking.WebApi\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Drop.sql
 C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Tracking.WebApi\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Subscription_Create.sql
@@ -110,7 +109,11 @@ C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Tracking.WebApi\bin\De
 C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Tracking.WebApi\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\PostgreSql\Subscription_Drop.sql
 C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Tracking.WebApi\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\PostgreSql\Timeout_Create.sql
 C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Tracking.WebApi\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\PostgreSql\Timeout_Drop.sql
+C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Tracking.WebApi\bin\Debug\netcoreapp3.1\Antlr3.Runtime.dll
+C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Tracking.WebApi\bin\Debug\netcoreapp3.1\Iesi.Collections.dll
+C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Tracking.WebApi\bin\Debug\netcoreapp3.1\NHibernate.dll
+C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Tracking.WebApi\bin\Debug\netcoreapp3.1\Remotion.Linq.dll
+C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Tracking.WebApi\bin\Debug\netcoreapp3.1\Remotion.Linq.EagerFetching.dll
 C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Tracking.WebApi\obj\Debug\netcoreapp3.1\Tracking.WebApi.csproj.CoreCompileInputs.cache
 C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Tracking.WebApi\obj\Debug\netcoreapp3.1\Tracking.WebApi.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Tracking.WebApi\obj\Debug\netcoreapp3.1\Tracking.WebApi.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Tracking.WebApi\bin\Debug\netcoreapp3.1\Tracking.Data.dll.config

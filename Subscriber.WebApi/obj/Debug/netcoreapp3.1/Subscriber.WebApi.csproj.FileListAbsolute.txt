@@ -1,5 +1,4 @@
 C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Subscriber.WebApi\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
-C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Subscriber.WebApi\bin\Debug\netcoreapp3.1\Middlewares.dll
 C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Subscriber.WebApi\obj\Debug\netcoreapp3.1\Subscriber.WebApi.csprojAssemblyReference.cache
 C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Subscriber.WebApi\obj\Debug\netcoreapp3.1\Subscriber.WebApi.AssemblyInfoInputs.cache
 C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Subscriber.WebApi\obj\Debug\netcoreapp3.1\Subscriber.WebApi.AssemblyInfo.cs
@@ -104,7 +103,6 @@ C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Subscriber.WebApi\bin\
 C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Subscriber.WebApi\bin\Debug\netcoreapp3.1\Subscriber.Data.dll
 C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Subscriber.WebApi\bin\Debug\netcoreapp3.1\Subscriber.Services.dll
 C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Subscriber.WebApi\bin\Debug\netcoreapp3.1\Messages.pdb
-C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Subscriber.WebApi\bin\Debug\netcoreapp3.1\Middlewares.pdb
 C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Subscriber.WebApi\bin\Debug\netcoreapp3.1\Subscriber.Data.pdb
 C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Subscriber.WebApi\bin\Debug\netcoreapp3.1\Subscriber.Services.pdb
 C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Subscriber.WebApi\obj\Debug\netcoreapp3.1\Subscriber.WebApi.csproj.CopyComplete

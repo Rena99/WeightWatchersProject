@@ -25,6 +25,8 @@ namespace Tracking.WebApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddNHibernate(Configuration.GetConnectionString("TrackingDB"));
+            services.AddControllersWithViews();
             services.AddDbContext<TrackingContext>
             (options => options.UseSqlServer(Configuration.GetConnectionString("TrackingDB")));
             services.AddScoped<ITrackingService, TrackingService>();

@@ -116,8 +116,6 @@ C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Measure.Messaging\bin\
 C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Measure.Messaging\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
 C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Measure.Messaging\bin\Debug\netcoreapp3.1\Measure.WebApi.exe
 C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Measure.Messaging\bin\Debug\netcoreapp3.1\Measure.WebApi.dll
-C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Measure.Messaging\bin\Debug\netcoreapp3.1\Middlewares.dll
 C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Measure.Messaging\bin\Debug\netcoreapp3.1\Measure.WebApi.pdb
-C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Measure.Messaging\bin\Debug\netcoreapp3.1\Middlewares.pdb
 C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Measure.Messaging\bin\Debug\netcoreapp3.1\Measure.Messaging.dll.config
 C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Measure.Messaging\bin\Debug\netcoreapp3.1\Measure.Data.dll.config

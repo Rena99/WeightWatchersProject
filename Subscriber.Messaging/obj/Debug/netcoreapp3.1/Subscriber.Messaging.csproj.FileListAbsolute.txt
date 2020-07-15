@@ -81,10 +81,8 @@ C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Subscriber.Messaging\b
 C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Subscriber.Messaging\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Subscriber.Messaging\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
 C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Subscriber.Messaging\bin\Debug\netcoreapp3.1\Subscriber.WebApi.exe
-C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Subscriber.Messaging\bin\Debug\netcoreapp3.1\Middlewares.dll
 C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Subscriber.Messaging\bin\Debug\netcoreapp3.1\Subscriber.WebApi.dll
 C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Subscriber.Messaging\bin\Debug\netcoreapp3.1\Subscriber.WebApi.pdb
-C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Subscriber.Messaging\bin\Debug\netcoreapp3.1\Middlewares.pdb
 C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Subscriber.Messaging\bin\Debug\netcoreapp3.1\NServiceBus.Extensions.DependencyInjection.dll
 C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Subscriber.Messaging\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql
 C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Subscriber.Messaging\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Drop.sql

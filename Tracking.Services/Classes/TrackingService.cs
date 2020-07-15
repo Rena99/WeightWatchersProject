@@ -12,6 +12,11 @@ namespace Tracking.Services
             this.trackingRepository = trackingRepository;
         }
 
+        public TrackingModel GetTracking(int id)
+        {
+            return trackingRepository.GetTracking(id);
+        }
+
         public List<TrackingModel> GetTrackings(int id, int page, int size)
         {
             return trackingRepository.GetTrackings(id, page, size);

@@ -16,6 +16,11 @@ namespace Tracking.Data
             this.mapper = mapper;
         }
 
+        public TrackingModel GetTracking(int id)
+        {
+            return mapper.Map<TrackingModel>(weightWatchers.Trackings.FirstOrDefault(t => t.Id == id));
+        }
+
         public List<TrackingModel> GetTrackings(int id, int page, int size)
         {
             List<Tracking> trackings = (List<Tracking>)weightWatchers.Trackings.Where(t => t.CardId == id);

@@ -30,7 +30,6 @@
   <ItemGroup>
     <ProjectReference Include="..\Measure.Data\Measure.Data.csproj" />
     <ProjectReference Include="..\Messages\Messages.csproj" />
-    <ProjectReference Include="..\Middlewares\Middlewares.csproj" />
   </ItemGroup>
 
 

@@ -1430,3 +1430,13 @@ C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Measure.Messaging\bin\
 2020-07-09 12:07:32.285 INFO  Message #0 received
 2020-07-09 12:07:38.543 INFO  Message #0 successful
 2020-07-09 12:07:38.853 INFO  Message #0 completed
+2020-07-09 15:32:50.124 INFO  Logging to 'C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Measure.Messaging\bin\Debug\netcoreapp3.1\' with level Info
+2020-07-09 15:32:51.669 INFO  Auditing processed messages to 'audit'
+2020-07-09 15:32:52.836 INFO  Selected active license from C:\Users\rina lerner\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-10-05
+2020-07-09 15:33:02.156 INFO  Executing 'C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Measure.Messaging\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2020-07-09 15:33:02.644 INFO  Executing saga creation scripts:
+C:\Users\rina lerner\Documents\Brix\WeightWatchersProject\Measure.Messaging\bin\Debug\netcoreapp3.1\NServiceBus.Persistence.Sql\MsSqlServer\Sagas\AddMeasureHandler_Create.sql
+2020-07-09 15:33:32.224 INFO  Message #0 received
+2020-07-09 15:33:42.163 INFO  Message #0 successful
+2020-07-09 15:33:43.366 INFO  Message #0 completed
